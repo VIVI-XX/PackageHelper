@@ -1,0 +1,43 @@
+<application>
+  <component name="ActionsCollector">
+    <counts>
+      <entry action="$Copy" count="1" />
+      <entry action="$Cut" count="1" />
+      <entry action="$Delete" count="13" />
+      <entry action="$Paste" count="2" />
+      <entry action="$SelectAll" count="3" />
+      <entry action="$Undo" count="1" />
+      <entry action="About" count="1" />
+      <entry action="Android.CreateResourceDirectory" count="2" />
+      <entry action="Android.OpenStringResourceEditor" count="1" />
+      <entry action="Android.RunAndroidAvdManager" count="7" />
+      <entry action="Android.RunAndroidSdkManager" count="1" />
+      <entry action="Android.SyncProject" count="5" />
+      <entry action="AndroidConnectDebuggerAction" count="1" />
+      <entry action="CheckinProject" count="2" />
+      <entry action="CleanGradleProject" count="2" />
+      <entry action="ConfigureIcs" count="1" />
+      <entry action="ConsoleView.ClearAll" count="1" />
+      <entry action="Debug" count="4" />
+      <entry action="DialogOkAction Enter" count="4" />
+      <entry action="EditorBackSpace" count="3328" />
+      <entry action="EditorChooseLookupItem" count="175" />
+      <entry action="EditorChooseLookupItemReplace" count="9" />
+      <entry action="EditorCodeBlockEnd" count="1" />
+      <entry action="EditorCopy" count="232" />
+      <entry action="EditorCut" count="31" />
+      <entry action="EditorDelete" count="6" />
+      <entry action="EditorDown" count="922" />
+      <entry action="EditorEnter" count="617" />
+      <entry action="EditorLeft" count="323" />
+      <entry action="EditorLineEnd" count="4" />
+      <entry action="EditorPageDown" count="1" />
+      <entry action="EditorPageUp" count="3" />
+      <entry action="EditorPaste" count="313" />
+      <entry action="EditorRight" count="284" />
+      <entry action="EditorTab" count="59" />
+      <entry action="EditorUp" count="439" />
+      <entry action="ExtractMethod" count="1" />
+      <entry action="FileChooser.NewFolder" count="4" />
+      <entry action="Github.Share" count="7" />
+  
