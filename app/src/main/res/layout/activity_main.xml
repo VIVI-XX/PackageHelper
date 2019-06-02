@@ -7,5 +7,41 @@
     tools:context=".MainActivity">
 
 
+    <RadioGroup
+        android:id="@+id/bottomGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_weight="0.5"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="0dp">
+
+        <RadioButton
+            android:id="@+id/radioHelpMe"
+            style="@style/rg_btn_style"
+            android:drawableTop="@drawable/HelpMe"
+            android:text="@string/rdo_HelpMe"
+            android:textColor="@color/colorPrimaryDark" />
+
+        <RadioButton
+            android:id="@+id/radioHome"
+            style="@style/rg_btn_style"
+            android:drawableTop="@drawable/Home"
+            android:text="@string/rdo_Home"
+            android:textColor="@color/colorPrimaryDark" />
+
+
+        <RadioButton
+            android:id="@+id/radioHere"
+            style="@style/rg_btn_style"
+            android:drawableTop="@drawable/HelpYou"
+            android:text="@string/rdo_HelpYou"
+            android:textColor="@color/colorPrimaryDark" />
+
+    </RadioGroup>
+
+
 
 </android.support.constraint.ConstraintLayout>
