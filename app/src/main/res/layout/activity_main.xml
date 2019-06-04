@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -14,21 +14,20 @@
         android:layout_marginTop="8dp"
         android:layout_marginBottom="8dp"
         android:layout_weight="0.5"
-        android:orientation="horizontal"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toTopOf="0dp">
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
 
         <RadioButton
             android:id="@+id/radioHelpMe"
             style="@style/rg_btn_style"
-            android:drawableTop="@drawable/HelpMe"
+            android:drawableTop="@drawable/helpme"
             android:text="@string/rdo_HelpMe"
             android:textColor="@color/colorPrimaryDark" />
 
         <RadioButton
             android:id="@+id/radioHome"
             style="@style/rg_btn_style"
-            android:drawableTop="@drawable/Home"
+            android:drawableTop="@drawable/home"
             android:text="@string/rdo_Home"
             android:textColor="@color/colorPrimaryDark" />
 
@@ -36,7 +35,7 @@
         <RadioButton
             android:id="@+id/radioHere"
             style="@style/rg_btn_style"
-            android:drawableTop="@drawable/HelpYou"
+            android:drawableTop="@drawable/helpyou"
             android:text="@string/rdo_HelpYou"
             android:textColor="@color/colorPrimaryDark" />
 
@@ -44,4 +43,4 @@
 
 
 
-</android.support.constraint.ConstraintLayout>
+</RelativeLayout>
