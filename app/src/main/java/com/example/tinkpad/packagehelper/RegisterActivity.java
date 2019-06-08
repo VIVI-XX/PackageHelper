@@ -10,7 +10,6 @@ import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -23,10 +22,11 @@ public class RegisterActivity extends AppCompatActivity {
     //用户名，密码，再次输入的密码的控件的获取值
     private String userName,psw,pswAgain;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_regiter);
+        setContentView(R.layout.activity_register);
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
         init();
     }
@@ -37,6 +37,7 @@ public class RegisterActivity extends AppCompatActivity {
         et_user_name=findViewById(R.id.et_user_name);
         et_psw=findViewById(R.id.et_psw);
         et_psw_again=findViewById(R.id.et_psw_again);
+        tv_back=findViewById(R.id.btn_home);
         tv_back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -126,7 +127,7 @@ public class RegisterActivity extends AppCompatActivity {
         editor.putString(userName, md5Psw);
         //提交修改 editor.commit();
         editor.commit();
+    }
+}
 
 
-}
-}
