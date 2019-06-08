@@ -837,6 +837,7 @@ id bottom
 id bottomGroup
 id bt_login_register
 id bt_login_submit
+id btn_register
 id buttonPanel
 id center
 id center_horizontal
@@ -860,6 +861,9 @@ id edit_query
 id end
 id et_login_pwd
 id et_login_username
+id et_psw
+id et_psw_again
+id et_user_name
 id expand_activities_button
 id expanded_menu
 id fill
@@ -871,9 +875,6 @@ id group_divider
 id groups
 id home
 id homeAsUp
-id ib_login_qq
-id ib_login_weibo
-id ib_login_wx
 id icon
 id icon_group
 id ifRoom
@@ -893,8 +894,6 @@ id line3
 id listMode
 id list_item
 id ll_login_layer
-id ll_login_options
-id ll_login_pull
 id ll_login_pwd
 id ll_login_username
 id message
@@ -964,7 +963,6 @@ id title_template
 id top
 id topPanel
 id tv_login_forget_pwd
-id tv_navigation_label
 id uniform
 id up
 id useLogo
@@ -1006,7 +1004,7 @@ layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_main
 layout activity_main_login_navigation_bar
-layout login1
+layout activity_regiter
 layout notification_action
 layout notification_action_tombstone
 layout notification_template_custom_big

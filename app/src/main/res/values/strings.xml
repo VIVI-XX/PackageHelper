@@ -2,7 +2,7 @@
     <string name="app_name">PackageHelper</string>
     <string name="rdo_HelpMe">帮我</string>
     <string name="rdo_Home">首页</string>
-    <string name="rdo_HelpYou" >帮你</string>
+    <string name="rdo_HelpYou">帮你</string>
     <!--新版登录专用-->
     <string name="login" translatable="false">登录</string>
     <string name="login_input_username_hint" translatable="false">用户名</string>

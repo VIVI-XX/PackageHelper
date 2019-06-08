@@ -1,26 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:background="@color/white"
-    android:gravity="center_horizontal"
-    android:orientation="horizontal">
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
 
 
-    <TextView
-        android:id="@+id/tv_navigation_label"
-        android:layout_width="0dp"
-        android:layout_height="match_parent"
-        android:layout_gravity="center_vertical"
-        android:layout_weight="1"
-        android:gravity="center"
-        android:textColor="@color/white"
-        android:textSize="18sp"
-        tools:text="@string/login_register_hint" />
+    <RadioGroup
+        android:id="@+id/bottomGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_weight="0.5"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
 
-    <Space
-        android:layout_width="48dp"
-        android:layout_height="48dp" />
-</LinearLayout>
+        <RadioButton
+            android:id="@+id/radioHelpMe"
+            style="@style/rg_btn_style"
+            android:drawableTop="@drawable/helpme"
+            android:text="@string/rdo_HelpMe"
+            android:textColor="@color/colorPrimaryDark" />
+
+        <RadioButton
+            android:id="@+id/radioHome"
+            style="@style/rg_btn_style"
+            android:drawableTop="@drawable/home"
+            android:text="@string/rdo_Home"
+            android:textColor="@color/colorPrimaryDark" />
+
+
+        <RadioButton
+            android:id="@+id/radioHere"
+            style="@style/rg_btn_style"
+            android:drawableTop="@drawable/helpyou"
+            android:text="@string/rdo_HelpYou"
+            android:textColor="@color/colorPrimaryDark" />
+
+    </RadioGroup>
+
+
+
+</RelativeLayout>
