@@ -6,27 +6,59 @@
     android:layout_height="match_parent"
     tools:context=".HomeActivity">
 
-    <ImageView
-        android:id="@+id/iv_login_logo"
-        android:layout_width="500dp"
-        android:layout_height="100dp"
-        android:layout_gravity="center_horizontal"
-        android:contentDescription="@null"
-        android:paddingTop="5dp"
-        android:scaleType="centerInside"
-        app:srcCompat="@drawable/logo" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+
+        <ImageView
+            android:id="@+id/iv_login_logo"
+            android:layout_width="500dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center_horizontal"
+            android:contentDescription="@null"
+            android:paddingTop="5dp"
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/logo" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:text="⭐About Us"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/display_log"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_height="wrap_content"
+                android:text="    Hello,大家好！\n    我是PackageHelper——一个把你快递顺利带回“家”的小帮手。\n    每一位用户都可以在这里找到“热心”的swufe将你的快递带到你身边哦！\n    当然，在你把自己的快递领回“家”时，也可以带回无人来取的快递宝宝，它的主人也会给你小小的奖励。\n    叮~我的小主人~\n    你的快递到“家”啦！"
+                android:textSize="20dp"
+                android:textColor="@color/gray"></TextView>
+        </ScrollView>
+
+
+    </LinearLayout>
 
 
     <RadioGroup
         android:id="@+id/bottomGroup"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
         android:layout_marginTop="8dp"
         android:layout_marginBottom="8dp"
         android:layout_weight="0.5"
-        android:layout_alignParentBottom="true"
         android:orientation="horizontal">
-
 
 
         <RadioButton

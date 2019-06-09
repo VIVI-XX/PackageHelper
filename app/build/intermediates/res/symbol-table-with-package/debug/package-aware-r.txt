@@ -1245,6 +1245,7 @@ id design_navigation_view
 id dimensions
 id direct
 id disableHome
+id display_log
 id edit_query
 id end
 id enterAlways
