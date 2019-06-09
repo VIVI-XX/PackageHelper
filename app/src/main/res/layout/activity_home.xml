@@ -1,15 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".HomeActivity">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
+
         <TextView
             android:id="@+id/text_home_title"
             android:layout_width="match_parent"
@@ -19,25 +17,30 @@
             android:textStyle="bold"
             android:gravity="center_horizontal"/>
 
-        <ImageView
-            android:id="@+id/iv_login_logo"
-            android:layout_width="500dp"
-            android:layout_height="100dp"
-            android:layout_gravity="center_horizontal"
-            android:contentDescription="@null"
-            android:paddingTop="5dp"
-            android:scaleType="centerInside"
-            app:srcCompat="@drawable/logo" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        android:text="⭐About Us"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="400dp"
+        android:layout_height="150dp"
+        android:cropToPadding="false"
+        android:padding="20dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/logo"
+        />
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="15dp"
-            android:text="⭐About Us"
-            android:textColor="@color/colorPrimaryDark"
-            android:textSize="25dp"
-            android:textStyle="bold" />
+
+
+
+
+
 
         <ScrollView
             android:layout_width="match_parent"
@@ -50,12 +53,13 @@
                 android:layout_marginLeft="10dp"
                 android:text="    Hello,大家好！\n    我是PackageHelper——一个把你快递顺利带回“家”的小帮手。\n    每一位用户都可以在这里找到“热心”的swufe将你的快递带到你身边哦！\n    当然，在你把自己的快递领回“家”时，也可以带回无人来取的快递宝宝，它的主人也会给你小小的奖励。\n    叮~我的小主人~\n    你的快递到“家”啦！"
                 android:textColor="@color/gray"
-                android:textSize="20dp"></TextView>
+                android:textSize="13sp"></TextView>
         </ScrollView>
 
 
-    </LinearLayout>
 
 
 
-</RelativeLayout>
+
+
+</LinearLayout>
