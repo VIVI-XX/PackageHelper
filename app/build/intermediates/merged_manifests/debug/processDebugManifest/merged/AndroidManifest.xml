@@ -27,6 +27,9 @@
         </activity>
         <activity android:name="com.example.tinkpad.packagehelper.RegisterActivity" />
         <activity android:name="com.example.tinkpad.packagehelper.HomeActivity" />
+        <activity android:name="com.example.tinkpad.packagehelper.HelpMeFragment" />
+        <activity android:name="com.example.tinkpad.packagehelper.HelpYouFragment" />
+        <activity android:name="com.example.tinkpad.packagehelper.Frame" />
     </application>
 
 </manifest>

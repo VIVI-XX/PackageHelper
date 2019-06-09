@@ -10,8 +10,14 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
-
-
+        <TextView
+            android:id="@+id/text_home_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="25dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="bold"
+            android:gravity="center_horizontal"/>
 
         <ImageView
             android:id="@+id/iv_login_logo"
@@ -36,53 +42,20 @@
         <ScrollView
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
+
             <TextView
                 android:id="@+id/display_log"
                 android:layout_width="match_parent"
-                android:layout_marginLeft="10dp"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
                 android:text="    Hello,大家好！\n    我是PackageHelper——一个把你快递顺利带回“家”的小帮手。\n    每一位用户都可以在这里找到“热心”的swufe将你的快递带到你身边哦！\n    当然，在你把自己的快递领回“家”时，也可以带回无人来取的快递宝宝，它的主人也会给你小小的奖励。\n    叮~我的小主人~\n    你的快递到“家”啦！"
-                android:textSize="20dp"
-                android:textColor="@color/gray"></TextView>
+                android:textColor="@color/gray"
+                android:textSize="20dp"></TextView>
         </ScrollView>
 
 
     </LinearLayout>
 
 
-    <RadioGroup
-        android:id="@+id/bottomGroup"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_marginTop="8dp"
-        android:layout_marginBottom="8dp"
-        android:layout_weight="0.5"
-        android:orientation="horizontal">
-
-
-        <RadioButton
-            android:id="@+id/radioHelpMe"
-            style="@style/rg_btn_style"
-            android:drawableTop="@drawable/helpme"
-            android:text="@string/rdo_HelpMe"
-            android:textColor="@color/colorPrimaryDark" />
-
-        <RadioButton
-            android:id="@+id/radioHome"
-            style="@style/rg_btn_style"
-            android:drawableTop="@drawable/home"
-            android:text="@string/rdo_Home"
-            android:textColor="@color/colorPrimaryDark" />
-
-
-        <RadioButton
-            android:id="@+id/radioHere"
-            style="@style/rg_btn_style"
-            android:drawableTop="@drawable/helpyou"
-            android:text="@string/rdo_HelpYou"
-            android:textColor="@color/colorPrimaryDark" />
-
-    </RadioGroup>
 
 </RelativeLayout>
