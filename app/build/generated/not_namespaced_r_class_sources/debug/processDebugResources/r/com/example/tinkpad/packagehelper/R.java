@@ -5541,8 +5541,8 @@ public final class R {
     public static final int abc_search_view=0x7f0b0019;
     public static final int abc_select_dialog_material=0x7f0b001a;
     public static final int abc_tooltip=0x7f0b001b;
-    public static final int activity_main=0x7f0b001c;
-    public static final int activity_main_login_navigation_bar=0x7f0b001d;
+    public static final int activity_home=0x7f0b001c;
+    public static final int activity_main=0x7f0b001d;
     public static final int activity_register=0x7f0b001e;
     public static final int design_bottom_navigation_item=0x7f0b001f;
     public static final int design_bottom_sheet_dialog=0x7f0b0020;

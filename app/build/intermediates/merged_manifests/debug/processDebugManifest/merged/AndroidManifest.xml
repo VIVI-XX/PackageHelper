@@ -26,6 +26,7 @@
             </intent-filter>
         </activity>
         <activity android:name="com.example.tinkpad.packagehelper.RegisterActivity" />
+        <activity android:name="com.example.tinkpad.packagehelper.HomeActivity" />
     </application>
 
 </manifest>

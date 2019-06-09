@@ -94,7 +94,7 @@ public class MainActivity extends AppCompatActivity {
                     //销毁登录界面
                     MainActivity.this.finish();
                     //跳转到主界面，登录成功的状态传递到 MainActivity 中
-                    startActivity(new Intent(MainActivity.this, MainActivity.class));
+                    startActivity(new Intent(MainActivity.this, HomeActivity.class));
                     return;
                 } else if ((spPsw != null && !TextUtils.isEmpty(spPsw) && !md5Psw.equals(spPsw))) {
                     Toast.makeText(MainActivity.this, "输入的用户名和密码不一致", Toast.LENGTH_SHORT).show();

@@ -1,16 +1,19 @@
 -- Merging decision tree log ---
 manifest
-ADDED from F:\PackageHelper\app\src\main\AndroidManifest.xml:2:1-22:12
-INJECTED from F:\PackageHelper\app\src\main\AndroidManifest.xml:2:1-22:12
-INJECTED from F:\PackageHelper\app\src\main\AndroidManifest.xml:2:1-22:12
-INJECTED from F:\PackageHelper\app\src\main\AndroidManifest.xml:2:1-22:12
+ADDED from F:\PackageHelper\app\src\main\AndroidManifest.xml:2:1-23:12
+INJECTED from F:\PackageHelper\app\src\main\AndroidManifest.xml:2:1-23:12
+INJECTED from F:\PackageHelper\app\src\main\AndroidManifest.xml:2:1-23:12
+INJECTED from F:\PackageHelper\app\src\main\AndroidManifest.xml:2:1-23:12
+MERGED from [com.android.support:design:28.0.0] C:\Users\Tinkpad\.gradle\caches\transforms-1\files-1.1\design-28.0.0.aar\bad99703f71ba101c6dbf38b8a29ff17\AndroidManifest.xml:17:1-24:12
 MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\Tinkpad\.gradle\caches\transforms-1\files-1.1\appcompat-v7-28.0.0.aar\263fe042ab5ff62eae804b8452d49c96\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\Tinkpad\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.3.aar\7af10742ffa5660d5d1134302b9460aa\AndroidManifest.xml:2:1-11:12
 MERGED from [com.android.support:support-fragment:28.0.0] C:\Users\Tinkpad\.gradle\caches\transforms-1\files-1.1\support-fragment-28.0.0.aar\c18ba3e35610db52deeba723fea51435\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:animated-vector-drawable:28.0.0] C:\Users\Tinkpad\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-28.0.0.aar\ca2de0a41bd6e07af7a8c9e543b1f958\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:recyclerview-v7:28.0.0] C:\Users\Tinkpad\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-28.0.0.aar\656b7edb1ee0ae8baf4e7bca706f3990\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:support-core-ui:28.0.0] C:\Users\Tinkpad\.gradle\caches\transforms-1\files-1.1\support-core-ui-28.0.0.aar\c64410290ff18326c4db72602b6f9f19\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:support-core-utils:28.0.0] C:\Users\Tinkpad\.gradle\caches\transforms-1\files-1.1\support-core-utils-28.0.0.aar\15dbfd1d1a41cb047a8374fa196cc745\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:support-vector-drawable:28.0.0] C:\Users\Tinkpad\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-28.0.0.aar\72ca537d4c653eca3688c631baef42df\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:transition:28.0.0] C:\Users\Tinkpad\.gradle\caches\transforms-1\files-1.1\transition-28.0.0.aar\f8a8ede3a4b21b4a1160746f53def02d\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:loader:28.0.0] C:\Users\Tinkpad\.gradle\caches\transforms-1\files-1.1\loader-28.0.0.aar\34a33cef262570511c055d6072784cc1\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:viewpager:28.0.0] C:\Users\Tinkpad\.gradle\caches\transforms-1\files-1.1\viewpager-28.0.0.aar\8d1ce6bfd09e51d017b60937cb1ccded\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:coordinatorlayout:28.0.0] C:\Users\Tinkpad\.gradle\caches\transforms-1\files-1.1\coordinatorlayout-28.0.0.aar\1a6676ae8aa68c811325e00986bba96b\AndroidManifest.xml:17:1-22:12
@@ -22,34 +25,37 @@ MERGED from [com.android.support:asynclayoutinflater:28.0.0] C:\Users\Tinkpad\.g
 MERGED from [com.android.support:support-compat:28.0.0] C:\Users\Tinkpad\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\a76b784e41896309d62fc26ebf332ce0\AndroidManifest.xml:17:1-24:12
 MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\Tinkpad\.gradle\caches\transforms-1\files-1.1\versionedparcelable-28.0.0.aar\a5d2423a3dd3f3a53894cf21e52a84c8\AndroidManifest.xml:17:1-25:12
 MERGED from [com.android.support:cursoradapter:28.0.0] C:\Users\Tinkpad\.gradle\caches\transforms-1\files-1.1\cursoradapter-28.0.0.aar\cc6603969f48eb556c302f435b714051\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:cardview-v7:28.0.0] C:\Users\Tinkpad\.gradle\caches\transforms-1\files-1.1\cardview-v7-28.0.0.aar\b8b531f891ba9eb928cd07b620ea4a53\AndroidManifest.xml:17:1-22:12
 MERGED from [android.arch.lifecycle:runtime:1.1.1] C:\Users\Tinkpad\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\15e8667b163079df4269f61622d221ba\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:documentfile:28.0.0] C:\Users\Tinkpad\.gradle\caches\transforms-1\files-1.1\documentfile-28.0.0.aar\816400a586e2f8bda6a32c662c3a9809\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:localbroadcastmanager:28.0.0] C:\Users\Tinkpad\.gradle\caches\transforms-1\files-1.1\localbroadcastmanager-28.0.0.aar\374aca305a41508f95d50361d95d42df\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:print:28.0.0] C:\Users\Tinkpad\.gradle\caches\transforms-1\files-1.1\print-28.0.0.aar\6072d35ba7f9b26e6c0f9d94eaa16848\AndroidManifest.xml:17:1-22:12
 MERGED from [android.arch.lifecycle:viewmodel:1.1.1] C:\Users\Tinkpad\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.1.aar\ffc3ca536d07a9c6fbca86c04dbae02e\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:interpolator:28.0.0] C:\Users\Tinkpad\.gradle\caches\transforms-1\files-1.1\interpolator-28.0.0.aar\aadac5d4843632d91441a0adb7e1045d\AndroidManifest.xml:17:1-22:12
 MERGED from [android.arch.lifecycle:livedata:1.1.1] C:\Users\Tinkpad\.gradle\caches\transforms-1\files-1.1\livedata-1.1.1.aar\e5acf91aa7bc3f7c53f4d0ac111d8da4\AndroidManifest.xml:17:1-22:12
 MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\Tinkpad\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.1.aar\191160d2814e0141efd01d0b9ae22af8\AndroidManifest.xml:17:1-22:12
 MERGED from [android.arch.core:runtime:1.1.1] C:\Users\Tinkpad\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\bfce5e3e0b903029e480aeef1804bace\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:interpolator:28.0.0] C:\Users\Tinkpad\.gradle\caches\transforms-1\files-1.1\interpolator-28.0.0.aar\aadac5d4843632d91441a0adb7e1045d\AndroidManifest.xml:17:1-22:12
-INJECTED from F:\PackageHelper\app\src\main\AndroidManifest.xml:2:1-22:12
-INJECTED from F:\PackageHelper\app\src\main\AndroidManifest.xml:2:1-22:12
-INJECTED from F:\PackageHelper\app\src\main\AndroidManifest.xml:2:1-22:12
+INJECTED from F:\PackageHelper\app\src\main\AndroidManifest.xml:2:1-23:12
+INJECTED from F:\PackageHelper\app\src\main\AndroidManifest.xml:2:1-23:12
+INJECTED from F:\PackageHelper\app\src\main\AndroidManifest.xml:2:1-23:12
 	package
 		ADDED from F:\PackageHelper\app\src\main\AndroidManifest.xml:3:5-48
 		INJECTED from F:\PackageHelper\app\src\main\AndroidManifest.xml
 		INJECTED from F:\PackageHelper\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from F:\PackageHelper\app\src\main\AndroidManifest.xml
-		ADDED from F:\PackageHelper\app\src\main\AndroidManifest.xml:2:1-22:12
+		ADDED from F:\PackageHelper\app\src\main\AndroidManifest.xml:2:1-23:12
 		INJECTED from F:\PackageHelper\app\src\main\AndroidManifest.xml
 	android:versionCode
 		INJECTED from F:\PackageHelper\app\src\main\AndroidManifest.xml
-		ADDED from F:\PackageHelper\app\src\main\AndroidManifest.xml:2:1-22:12
+		ADDED from F:\PackageHelper\app\src\main\AndroidManifest.xml:2:1-23:12
 		INJECTED from F:\PackageHelper\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from F:\PackageHelper\app\src\main\AndroidManifest.xml:2:11-69
 application
-ADDED from F:\PackageHelper\app\src\main\AndroidManifest.xml:5:5-20:19
+ADDED from F:\PackageHelper\app\src\main\AndroidManifest.xml:5:5-21:19
+MERGED from [com.android.support:design:28.0.0] C:\Users\Tinkpad\.gradle\caches\transforms-1\files-1.1\design-28.0.0.aar\bad99703f71ba101c6dbf38b8a29ff17\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:design:28.0.0] C:\Users\Tinkpad\.gradle\caches\transforms-1\files-1.1\design-28.0.0.aar\bad99703f71ba101c6dbf38b8a29ff17\AndroidManifest.xml:22:5-20
 MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\Tinkpad\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.3.aar\7af10742ffa5660d5d1134302b9460aa\AndroidManifest.xml:9:5-20
 MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\Tinkpad\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.3.aar\7af10742ffa5660d5d1134302b9460aa\AndroidManifest.xml:9:5-20
 MERGED from [com.android.support:support-compat:28.0.0] C:\Users\Tinkpad\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\a76b784e41896309d62fc26ebf332ce0\AndroidManifest.xml:22:5-94
@@ -85,13 +91,19 @@ ADDED from F:\PackageHelper\app\src\main\AndroidManifest.xml:16:17-77
 	android:name
 		ADDED from F:\PackageHelper\app\src\main\AndroidManifest.xml:16:27-74
 activity#com.example.tinkpad.packagehelper.RegisterActivity
-ADDED from F:\PackageHelper\app\src\main\AndroidManifest.xml:19:9-63
+ADDED from F:\PackageHelper\app\src\main\AndroidManifest.xml:19:9-54
 	android:name
 		ADDED from F:\PackageHelper\app\src\main\AndroidManifest.xml:19:19-51
+activity#com.example.tinkpad.packagehelper.HomeActivity
+ADDED from F:\PackageHelper\app\src\main\AndroidManifest.xml:20:9-59
+	android:name
+		ADDED from F:\PackageHelper\app\src\main\AndroidManifest.xml:20:19-47
 uses-sdk
 INJECTED from F:\PackageHelper\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from F:\PackageHelper\app\src\main\AndroidManifest.xml
 INJECTED from F:\PackageHelper\app\src\main\AndroidManifest.xml
+MERGED from [com.android.support:design:28.0.0] C:\Users\Tinkpad\.gradle\caches\transforms-1\files-1.1\design-28.0.0.aar\bad99703f71ba101c6dbf38b8a29ff17\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:design:28.0.0] C:\Users\Tinkpad\.gradle\caches\transforms-1\files-1.1\design-28.0.0.aar\bad99703f71ba101c6dbf38b8a29ff17\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\Tinkpad\.gradle\caches\transforms-1\files-1.1\appcompat-v7-28.0.0.aar\263fe042ab5ff62eae804b8452d49c96\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\Tinkpad\.gradle\caches\transforms-1\files-1.1\appcompat-v7-28.0.0.aar\263fe042ab5ff62eae804b8452d49c96\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\Tinkpad\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.3.aar\7af10742ffa5660d5d1134302b9460aa\AndroidManifest.xml:5:5-7:41
@@ -100,12 +112,16 @@ MERGED from [com.android.support:support-fragment:28.0.0] C:\Users\Tinkpad\.grad
 MERGED from [com.android.support:support-fragment:28.0.0] C:\Users\Tinkpad\.gradle\caches\transforms-1\files-1.1\support-fragment-28.0.0.aar\c18ba3e35610db52deeba723fea51435\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:animated-vector-drawable:28.0.0] C:\Users\Tinkpad\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-28.0.0.aar\ca2de0a41bd6e07af7a8c9e543b1f958\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:animated-vector-drawable:28.0.0] C:\Users\Tinkpad\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-28.0.0.aar\ca2de0a41bd6e07af7a8c9e543b1f958\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:28.0.0] C:\Users\Tinkpad\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-28.0.0.aar\656b7edb1ee0ae8baf4e7bca706f3990\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:28.0.0] C:\Users\Tinkpad\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-28.0.0.aar\656b7edb1ee0ae8baf4e7bca706f3990\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-core-ui:28.0.0] C:\Users\Tinkpad\.gradle\caches\transforms-1\files-1.1\support-core-ui-28.0.0.aar\c64410290ff18326c4db72602b6f9f19\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-core-ui:28.0.0] C:\Users\Tinkpad\.gradle\caches\transforms-1\files-1.1\support-core-ui-28.0.0.aar\c64410290ff18326c4db72602b6f9f19\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-core-utils:28.0.0] C:\Users\Tinkpad\.gradle\caches\transforms-1\files-1.1\support-core-utils-28.0.0.aar\15dbfd1d1a41cb047a8374fa196cc745\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-core-utils:28.0.0] C:\Users\Tinkpad\.gradle\caches\transforms-1\files-1.1\support-core-utils-28.0.0.aar\15dbfd1d1a41cb047a8374fa196cc745\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-vector-drawable:28.0.0] C:\Users\Tinkpad\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-28.0.0.aar\72ca537d4c653eca3688c631baef42df\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-vector-drawable:28.0.0] C:\Users\Tinkpad\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-28.0.0.aar\72ca537d4c653eca3688c631baef42df\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:28.0.0] C:\Users\Tinkpad\.gradle\caches\transforms-1\files-1.1\transition-28.0.0.aar\f8a8ede3a4b21b4a1160746f53def02d\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:28.0.0] C:\Users\Tinkpad\.gradle\caches\transforms-1\files-1.1\transition-28.0.0.aar\f8a8ede3a4b21b4a1160746f53def02d\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:loader:28.0.0] C:\Users\Tinkpad\.gradle\caches\transforms-1\files-1.1\loader-28.0.0.aar\34a33cef262570511c055d6072784cc1\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:loader:28.0.0] C:\Users\Tinkpad\.gradle\caches\transforms-1\files-1.1\loader-28.0.0.aar\34a33cef262570511c055d6072784cc1\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:viewpager:28.0.0] C:\Users\Tinkpad\.gradle\caches\transforms-1\files-1.1\viewpager-28.0.0.aar\8d1ce6bfd09e51d017b60937cb1ccded\AndroidManifest.xml:20:5-44
@@ -128,6 +144,8 @@ MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\Tinkpad\.g
 MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\Tinkpad\.gradle\caches\transforms-1\files-1.1\versionedparcelable-28.0.0.aar\a5d2423a3dd3f3a53894cf21e52a84c8\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:cursoradapter:28.0.0] C:\Users\Tinkpad\.gradle\caches\transforms-1\files-1.1\cursoradapter-28.0.0.aar\cc6603969f48eb556c302f435b714051\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:cursoradapter:28.0.0] C:\Users\Tinkpad\.gradle\caches\transforms-1\files-1.1\cursoradapter-28.0.0.aar\cc6603969f48eb556c302f435b714051\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cardview-v7:28.0.0] C:\Users\Tinkpad\.gradle\caches\transforms-1\files-1.1\cardview-v7-28.0.0.aar\b8b531f891ba9eb928cd07b620ea4a53\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cardview-v7:28.0.0] C:\Users\Tinkpad\.gradle\caches\transforms-1\files-1.1\cardview-v7-28.0.0.aar\b8b531f891ba9eb928cd07b620ea4a53\AndroidManifest.xml:20:5-44
 MERGED from [android.arch.lifecycle:runtime:1.1.1] C:\Users\Tinkpad\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\15e8667b163079df4269f61622d221ba\AndroidManifest.xml:20:5-44
 MERGED from [android.arch.lifecycle:runtime:1.1.1] C:\Users\Tinkpad\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\15e8667b163079df4269f61622d221ba\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:documentfile:28.0.0] C:\Users\Tinkpad\.gradle\caches\transforms-1\files-1.1\documentfile-28.0.0.aar\816400a586e2f8bda6a32c662c3a9809\AndroidManifest.xml:20:5-44
@@ -138,14 +156,14 @@ MERGED from [com.android.support:print:28.0.0] C:\Users\Tinkpad\.gradle\caches\t
 MERGED from [com.android.support:print:28.0.0] C:\Users\Tinkpad\.gradle\caches\transforms-1\files-1.1\print-28.0.0.aar\6072d35ba7f9b26e6c0f9d94eaa16848\AndroidManifest.xml:20:5-44
 MERGED from [android.arch.lifecycle:viewmodel:1.1.1] C:\Users\Tinkpad\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.1.aar\ffc3ca536d07a9c6fbca86c04dbae02e\AndroidManifest.xml:20:5-44
 MERGED from [android.arch.lifecycle:viewmodel:1.1.1] C:\Users\Tinkpad\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.1.aar\ffc3ca536d07a9c6fbca86c04dbae02e\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] C:\Users\Tinkpad\.gradle\caches\transforms-1\files-1.1\interpolator-28.0.0.aar\aadac5d4843632d91441a0adb7e1045d\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] C:\Users\Tinkpad\.gradle\caches\transforms-1\files-1.1\interpolator-28.0.0.aar\aadac5d4843632d91441a0adb7e1045d\AndroidManifest.xml:20:5-44
 MERGED from [android.arch.lifecycle:livedata:1.1.1] C:\Users\Tinkpad\.gradle\caches\transforms-1\files-1.1\livedata-1.1.1.aar\e5acf91aa7bc3f7c53f4d0ac111d8da4\AndroidManifest.xml:20:5-44
 MERGED from [android.arch.lifecycle:livedata:1.1.1] C:\Users\Tinkpad\.gradle\caches\transforms-1\files-1.1\livedata-1.1.1.aar\e5acf91aa7bc3f7c53f4d0ac111d8da4\AndroidManifest.xml:20:5-44
 MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\Tinkpad\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.1.aar\191160d2814e0141efd01d0b9ae22af8\AndroidManifest.xml:20:5-44
 MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\Tinkpad\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.1.aar\191160d2814e0141efd01d0b9ae22af8\AndroidManifest.xml:20:5-44
 MERGED from [android.arch.core:runtime:1.1.1] C:\Users\Tinkpad\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\bfce5e3e0b903029e480aeef1804bace\AndroidManifest.xml:20:5-44
 MERGED from [android.arch.core:runtime:1.1.1] C:\Users\Tinkpad\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\bfce5e3e0b903029e480aeef1804bace\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:interpolator:28.0.0] C:\Users\Tinkpad\.gradle\caches\transforms-1\files-1.1\interpolator-28.0.0.aar\aadac5d4843632d91441a0adb7e1045d\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:interpolator:28.0.0] C:\Users\Tinkpad\.gradle\caches\transforms-1\files-1.1\interpolator-28.0.0.aar\aadac5d4843632d91441a0adb7e1045d\AndroidManifest.xml:20:5-44
 INJECTED from F:\PackageHelper\app\src\main\AndroidManifest.xml
 INJECTED from F:\PackageHelper\app\src\main\AndroidManifest.xml
 	android:targetSdkVersion

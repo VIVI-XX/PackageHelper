@@ -4,7 +4,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".HomeActivity">
+
+    <ImageView
+        android:id="@+id/iv_login_logo"
+        android:layout_width="500dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center_horizontal"
+        android:contentDescription="@null"
+        android:paddingTop="5dp"
+        android:scaleType="centerInside"
+        app:srcCompat="@drawable/logo" />
 
 
     <RadioGroup
@@ -16,6 +26,8 @@
         android:layout_weight="0.5"
         android:layout_alignParentBottom="true"
         android:orientation="horizontal">
+
+
 
         <RadioButton
             android:id="@+id/radioHelpMe"
@@ -40,7 +52,5 @@
             android:textColor="@color/colorPrimaryDark" />
 
     </RadioGroup>
-
-
 
 </RelativeLayout>
