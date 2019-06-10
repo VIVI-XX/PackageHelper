@@ -19,5 +19,6 @@
         <activity android:name=".RegisterActivity" />
         <activity android:name=".Frame"></activity>
     </application>
+    <uses-permission android:name="android.permission.INTERNET" />
 
 </manifest>
