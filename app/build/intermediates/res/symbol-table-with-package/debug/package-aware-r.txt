@@ -1144,6 +1144,7 @@ drawable abc_textfield_search_activated_mtrl_alpha
 drawable abc_textfield_search_default_mtrl_alpha
 drawable abc_textfield_search_material
 drawable abc_vector_test
+drawable add
 drawable avd_hide_password
 drawable avd_show_password
 drawable bg_login_thirdpart
@@ -1191,6 +1192,7 @@ id FUNCTION
 id META
 id SHIFT
 id SYM
+id Show_ddl
 id action0
 id action_bar
 id action_bar_activity_content
@@ -1287,6 +1289,8 @@ id icon_group
 id ifRoom
 id image
 id imageView
+id image_helpme
+id image_helpyou
 id info
 id invisible
 id italic
@@ -1309,8 +1313,6 @@ id ll_login_pwd
 id ll_login_username
 id masked
 id media_actions
-id menu_all
-id menu_mine
 id message
 id middle
 id mini
@@ -1366,6 +1368,17 @@ id shortcut
 id showCustom
 id showHome
 id showTitle
+id show_com
+id show_delete
+id show_home
+id show_money
+id show_name
+id show_num
+id show_place
+id show_shape
+id show_tel
+id show_urgent
+id show_username
 id smallLabel
 id snackbar_action
 id snackbar_text
@@ -1523,13 +1536,10 @@ layout select_dialog_item_material
 layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material
 layout support_simple_spinner_dropdown_item
-menu helpyou
+mipmap applogo
 mipmap ic_clear
 mipmap ic_launcher
 mipmap ic_launcher_round
-mipmap ic_login_3party_qq
-mipmap ic_login_3party_wechat
-mipmap ic_login_3party_weibo
 string abc_action_bar_home_description
 string abc_action_bar_up_description
 string abc_action_menu_overflow_description

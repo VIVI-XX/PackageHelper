@@ -20,7 +20,7 @@ public class HelpMeFragment extends Fragment {
     public void onActivityCreated(Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
         TextView tv =(TextView)getView().findViewById(R.id.text_helpme_title);
-        tv.setText("Help Me");
+        tv.setText("       Help Me");
 
     }
 

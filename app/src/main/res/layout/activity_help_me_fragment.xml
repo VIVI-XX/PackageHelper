@@ -8,11 +8,30 @@
     <TextView
         android:id="@+id/text_helpme_title"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textSize="25dp"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="0dp"
+        android:background="@color/moccasin"
+        android:gravity="left"
         android:textColor="@color/colorPrimaryDark"
-        android:textStyle="bold"
-        android:gravity="center_horizontal"/>
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/image_helpme"
+        android:layout_width="51dp"
+        android:layout_height="31dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginRight="1dp"
+        android:src="@drawable/add" />
 
 
 
