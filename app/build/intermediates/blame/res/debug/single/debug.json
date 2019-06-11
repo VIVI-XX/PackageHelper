@@ -136,6 +136,10 @@
         "source": "C:\\Users\\Tinkpad\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\263fe042ab5ff62eae804b8452d49c96\\res\\drawable-hdpi-v4\\abc_spinner_mtrl_am_alpha.9.png"
     },
     {
+        "merged": "F:\\PackageHelper\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_show_list.xml.flat",
+        "source": "F:\\PackageHelper\\app\\src\\main\\res\\layout\\activity_show_list.xml"
+    },
+    {
         "merged": "F:\\PackageHelper\\app\\build\\intermediates\\res\\merged\\debug\\layout_notification_template_big_media.xml.flat",
         "source": "C:\\Users\\Tinkpad\\.gradle\\caches\\transforms-1\\files-1.1\\support-media-compat-28.0.0.aar\\d9b996cf48012d453c9029fe6f36deb3\\res\\layout\\notification_template_big_media.xml"
     },
@@ -566,6 +570,10 @@
     {
         "merged": "F:\\PackageHelper\\app\\build\\intermediates\\res\\merged\\debug\\drawable_navigation_empty_icon.xml.flat",
         "source": "C:\\Users\\Tinkpad\\.gradle\\caches\\transforms-1\\files-1.1\\design-28.0.0.aar\\bad99703f71ba101c6dbf38b8a29ff17\\res\\drawable\\navigation_empty_icon.xml"
+    },
+    {
+        "merged": "F:\\PackageHelper\\app\\build\\intermediates\\res\\merged\\debug\\menu_helpyou.xml.flat",
+        "source": "F:\\PackageHelper\\app\\src\\main\\res\\menu\\helpyou.xml"
     },
     {
         "merged": "F:\\PackageHelper\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_menu_hardkey_panel_mtrl_mult.9.png.flat",
@@ -1104,6 +1112,10 @@
         "source": "C:\\Users\\Tinkpad\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\263fe042ab5ff62eae804b8452d49c96\\res\\drawable-hdpi-v4\\abc_ic_star_black_48dp.png"
     },
     {
+        "merged": "F:\\PackageHelper\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_submit.xml.flat",
+        "source": "F:\\PackageHelper\\app\\src\\main\\res\\layout\\activity_submit.xml"
+    },
+    {
         "merged": "F:\\PackageHelper\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_screen_simple_overlay_action_mode.xml.flat",
         "source": "C:\\Users\\Tinkpad\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\263fe042ab5ff62eae804b8452d49c96\\res\\layout\\abc_screen_simple_overlay_action_mode.xml"
     },
@@ -1566,6 +1578,10 @@
     {
         "merged": "F:\\PackageHelper\\app\\build\\intermediates\\res\\merged\\debug\\color_abc_tint_seek_thumb.xml.flat",
         "source": "C:\\Users\\Tinkpad\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\263fe042ab5ff62eae804b8452d49c96\\res\\color\\abc_tint_seek_thumb.xml"
+    },
+    {
+        "merged": "F:\\PackageHelper\\app\\build\\intermediates\\res\\merged\\debug\\drawable_mine.png.flat",
+        "source": "F:\\PackageHelper\\app\\src\\main\\res\\drawable\\mine.png"
     },
     {
         "merged": "F:\\PackageHelper\\app\\build\\intermediates\\res\\merged\\debug\\color-v23_abc_btn_colored_borderless_text_material.xml.flat",

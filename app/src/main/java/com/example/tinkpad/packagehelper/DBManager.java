@@ -9,7 +9,7 @@ import java.sql.ResultSet;
 
 public class DBManager {
     private static final String DBDRIVER = "com.mysql.jdbc.Driver";
-    private static final String DBURL = "jdbc:mysql://localhost/xx?useUnicode=true&characterEncoding=UTF-8";
+    private static final String DBURL = "jdbc:mysql://localhost/packagehelper?useUnicode=true&characterEncoding=UTF-8";
     private static final String DBUSER = "root";
     private static final String DBPASSWORD = "9945";
 
@@ -23,13 +23,14 @@ public class DBManager {
             e.printStackTrace();
             return false;
         }
+        //测试
         try{
             conn = DriverManager.getConnection(DBURL,DBUSER,DBPASSWORD);
-            String sql = "SELECT * from 表名";
+            String sql = "SELECT * from helpme";
             stmt= conn.prepareStatement(sql);
             ResultSet rs = stmt.executeQuery();
             while (rs.next()) {
-                String sUser = rs.getString("userName");
+                String sUser = rs.getString("username");
                 Log.i("temp", sUser);
             }
             rs.close();

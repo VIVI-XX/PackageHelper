@@ -1165,6 +1165,7 @@ drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
 drawable logo
+drawable mine
 drawable mtrl_snackbar_background
 drawable mtrl_tabs_default_indicator
 drawable navigation_empty_icon
@@ -1308,6 +1309,8 @@ id ll_login_pwd
 id ll_login_username
 id masked
 id media_actions
+id menu_all
+id menu_mine
 id message
 id middle
 id mini
@@ -1379,8 +1382,19 @@ id standard
 id start
 id status_bar_latest_event_content
 id stretch
+id sub_com
+id sub_ddl
+id sub_money
+id sub_name
+id sub_num
+id sub_place
+id sub_shape
+id sub_tel
+id sub_urgent
+id sub_username
 id submenuarrow
 id submit_area
+id submit_title
 id tabMode
 id tag_transition_group
 id tag_unhandled_key_event_manager
@@ -1472,6 +1486,8 @@ layout activity_help_you_fragment
 layout activity_home
 layout activity_main
 layout activity_register
+layout activity_show_list
+layout activity_submit
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
 layout design_layout_snackbar
@@ -1507,6 +1523,7 @@ layout select_dialog_item_material
 layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material
 layout support_simple_spinner_dropdown_item
+menu helpyou
 mipmap ic_clear
 mipmap ic_launcher
 mipmap ic_launcher_round
