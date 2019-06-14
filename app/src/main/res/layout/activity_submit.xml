@@ -6,6 +6,10 @@
     android:layout_height="match_parent"
     tools:context=".SubmitActivity"
     android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
 
     <TextView
         android:id="@+id/submit_title"
@@ -13,12 +17,20 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="100dp"
         android:gravity="center"
         android:text="新建帮帮单"
-        android:textColor="@color/colorPrimary"
+        android:textColor="@color/black"
         android:textSize="25sp"
         android:textStyle="bold" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/pen"
+            />
+
+    </LinearLayout>
     <LinearLayout
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
@@ -28,10 +40,9 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
+            android:layout_marginLeft="25dp"
             android:layout_marginTop="10dp"
             android:text="用户名:"
-            android:textColor="@color/colorPrimary"
             android:textSize="20dp"
             android:textStyle="bold" />
 
@@ -43,21 +54,42 @@
             android:textSize="20dp"
             android:textColor="@color/gray" />
 
-        <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/sub_urgent"
-            android:layout_marginLeft="5dp"/>
-
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
             android:layout_marginTop="10dp"
             android:text="急取件"
-            android:textColor="@color/colorPrimary"
             android:textSize="20dp"
             android:textStyle="bold" />
+
+
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/sub_urgent1"
+            android:text="是"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_marginLeft="5dp"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/sub_urgent2"
+                android:text="否"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:layout_marginLeft="5dp"/>
+
+
+        </RadioGroup>
+
 
 
 </LinearLayout>
@@ -71,11 +103,10 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
+            android:layout_marginLeft="25dp"
             android:layout_marginTop="10dp"
             android:text="电话号码:"
             android:inputType="phone"
-            android:textColor="@color/colorPrimary"
             android:textSize="20dp"
             android:textStyle="bold" />
 
@@ -96,10 +127,9 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
+            android:layout_marginLeft="25dp"
             android:layout_marginTop="10dp"
             android:text="取件名:"
-            android:textColor="@color/colorPrimary"
             android:textSize="20dp"
             android:textStyle="bold" />
 
@@ -117,7 +147,6 @@
             android:layout_marginLeft="10dp"
             android:layout_marginTop="10dp"
             android:text="取件码:"
-            android:textColor="@color/colorPrimary"
             android:textSize="20dp"
             android:textStyle="bold" />
 
@@ -138,10 +167,9 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
+            android:layout_marginLeft="25dp"
             android:layout_marginTop="10dp"
             android:text="快递公司:"
-            android:textColor="@color/colorPrimary"
             android:textSize="20dp"
             android:textStyle="bold" />
 
@@ -159,7 +187,6 @@
             android:layout_marginLeft="10dp"
             android:layout_marginTop="10dp"
             android:text="包裹大小:"
-            android:textColor="@color/colorPrimary"
             android:textSize="20dp"
             android:textStyle="bold" />
 
@@ -180,10 +207,9 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
+            android:layout_marginLeft="25dp"
             android:layout_marginTop="10dp"
             android:text="取货地点:"
-            android:textColor="@color/colorPrimary"
             android:textSize="20dp"
             android:textStyle="bold" />
 
@@ -204,10 +230,9 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
+            android:layout_marginLeft="25dp"
             android:layout_marginTop="10dp"
             android:text="奖励金:"
-            android:textColor="@color/colorPrimary"
             android:textSize="20dp"
             android:textStyle="bold" />
 
@@ -230,10 +255,9 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
+            android:layout_marginLeft="25dp"
             android:layout_marginTop="10dp"
             android:text="截止时间:"
-            android:textColor="@color/colorPrimary"
             android:textSize="20dp"
             android:textStyle="bold" />
 
@@ -251,7 +275,7 @@
             android:text="提交"
             android:textSize="15sp"
             android:textColor="@color/white"
-            android:background="@color/colorPrimary"/>
+            android:background="@color/black"/>
 
     </LinearLayout>
 

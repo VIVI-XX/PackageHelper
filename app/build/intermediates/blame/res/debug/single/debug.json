@@ -164,6 +164,10 @@
         "source": "C:\\Users\\Tinkpad\\.gradle\\caches\\transforms-1\\files-1.1\\design-28.0.0.aar\\bad99703f71ba101c6dbf38b8a29ff17\\res\\layout-sw600dp-v13\\design_layout_snackbar.xml"
     },
     {
+        "merged": "F:\\PackageHelper\\app\\build\\intermediates\\res\\merged\\debug\\layout_list_item.xml.flat",
+        "source": "F:\\PackageHelper\\app\\src\\main\\res\\layout\\list_item.xml"
+    },
+    {
         "merged": "F:\\PackageHelper\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_list_selector_disabled_holo_light.9.png.flat",
         "source": "C:\\Users\\Tinkpad\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\263fe042ab5ff62eae804b8452d49c96\\res\\drawable-xhdpi-v4\\abc_list_selector_disabled_holo_light.9.png"
     },
@@ -208,12 +212,12 @@
         "source": "C:\\Users\\Tinkpad\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\263fe042ab5ff62eae804b8452d49c96\\res\\drawable-xxxhdpi-v4\\abc_ic_star_half_black_48dp.png"
     },
     {
-        "merged": "F:\\PackageHelper\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_ic_star_black_48dp.png.flat",
-        "source": "C:\\Users\\Tinkpad\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\263fe042ab5ff62eae804b8452d49c96\\res\\drawable-xhdpi-v4\\abc_ic_star_black_48dp.png"
-    },
-    {
         "merged": "F:\\PackageHelper\\app\\build\\intermediates\\res\\merged\\debug\\layout_design_menu_item_action_area.xml.flat",
         "source": "C:\\Users\\Tinkpad\\.gradle\\caches\\transforms-1\\files-1.1\\design-28.0.0.aar\\bad99703f71ba101c6dbf38b8a29ff17\\res\\layout\\design_menu_item_action_area.xml"
+    },
+    {
+        "merged": "F:\\PackageHelper\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_ic_star_black_48dp.png.flat",
+        "source": "C:\\Users\\Tinkpad\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\263fe042ab5ff62eae804b8452d49c96\\res\\drawable-xhdpi-v4\\abc_ic_star_black_48dp.png"
     },
     {
         "merged": "F:\\PackageHelper\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_ic_star_half_black_36dp.png.flat",
@@ -682,6 +686,10 @@
     {
         "merged": "F:\\PackageHelper\\app\\build\\intermediates\\res\\merged\\debug\\color_mtrl_tabs_legacy_text_color_selector.xml.flat",
         "source": "C:\\Users\\Tinkpad\\.gradle\\caches\\transforms-1\\files-1.1\\design-28.0.0.aar\\bad99703f71ba101c6dbf38b8a29ff17\\res\\color\\mtrl_tabs_legacy_text_color_selector.xml"
+    },
+    {
+        "merged": "F:\\PackageHelper\\app\\build\\intermediates\\res\\merged\\debug\\drawable_pen.png.flat",
+        "source": "F:\\PackageHelper\\app\\src\\main\\res\\drawable\\pen.png"
     },
     {
         "merged": "F:\\PackageHelper\\app\\build\\intermediates\\res\\merged\\debug\\anim_abc_slide_out_top.xml.flat",

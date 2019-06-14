@@ -1182,6 +1182,7 @@ drawable notification_template_icon_bg
 drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
+drawable pen
 drawable shape1
 drawable shape2
 drawable tooltip_frame_dark
@@ -1403,7 +1404,8 @@ id sub_num
 id sub_place
 id sub_shape
 id sub_tel
-id sub_urgent
+id sub_urgent1
+id sub_urgent2
 id sub_username
 id submenuarrow
 id submit_area
@@ -1515,6 +1517,7 @@ layout design_navigation_item_subheader
 layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_password_icon
+layout list_item
 layout mtrl_layout_snackbar
 layout mtrl_layout_snackbar_include
 layout notification_action
