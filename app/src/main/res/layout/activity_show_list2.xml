@@ -12,14 +12,14 @@
         android:orientation="horizontal">
 
     <TextView
-        android:id="@+id/show_title"
+        android:id="@+id/show2_title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
         android:layout_marginLeft="150dp"
-        android:text="帮帮单"
+        android:text="我的快递1"
         android:textSize="25sp"
         android:textStyle="bold" />
         <ImageView
@@ -39,14 +39,14 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
             android:layout_marginTop="10dp"
-            android:text="用户名:"
+            android:text="编号:"
             android:textSize="20dp"
             android:textStyle="bold" />
 
         <TextView
             android:layout_width="100dp"
             android:layout_marginTop="10dp"
-            android:id="@+id/show_username"
+            android:id="@+id/show2_code"
             android:background="@color/silver"
             android:layout_height="wrap_content"
             android:textSize="20dp" />
@@ -66,7 +66,7 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
             android:layout_marginTop="10dp"
-            android:id="@+id/show_urgent"
+            android:id="@+id/show2_urgent"
             android:textSize="20dp"
             android:background="@color/silver"
             android:textStyle="bold" />
@@ -95,7 +95,7 @@
             android:layout_marginTop="20dp"
             android:layout_height="wrap_content"
             android:textSize="20dp"
-            android:id="@+id/show_tel"
+            android:id="@+id/show2_tel"
             android:background="@color/silver" />
     </LinearLayout>
     <LinearLayout
@@ -117,7 +117,7 @@
             android:layout_width="100dp"
             android:layout_marginTop="20dp"
             android:layout_height="wrap_content"
-            android:id="@+id/show_name"
+            android:id="@+id/show2_name"
             android:background="@color/silver"
             android:textSize="20dp" />
 
@@ -136,7 +136,7 @@
             android:layout_height="wrap_content"
             android:textSize="20dp"
             android:background="@color/silver"
-            android:id="@+id/show_num" />
+            android:id="@+id/show2_num" />
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
@@ -159,7 +159,7 @@
             android:layout_height="wrap_content"
             android:textSize="20dp"
             android:background="@color/silver"
-            android:id="@+id/show_com" />
+            android:id="@+id/show2_com" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -176,7 +176,7 @@
             android:layout_height="wrap_content"
             android:textSize="20dp"
             android:background="@color/silver"
-            android:id="@+id/show_shape" />
+            android:id="@+id/show2_shape" />
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
@@ -196,7 +196,7 @@
         <TextView
             android:layout_width="250dp"
             android:layout_marginTop="20dp"
-            android:id="@+id/show_place"
+            android:id="@+id/show2_place"
             android:layout_height="wrap_content"
             android:textSize="20dp"
             android:background="@color/silver" />
@@ -221,8 +221,26 @@
             android:layout_marginTop="20dp"
             android:layout_height="wrap_content"
             android:textSize="20dp"
-            android:id="@+id/show_money"
+            android:id="@+id/show2_money"
             android:background="@color/silver" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:text="帮帮单状态:"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_marginTop="20dp"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:id="@+id/show2_situation"
+            android:background="@color/silver" />
+
 
     </LinearLayout>
 
@@ -247,7 +265,7 @@
             android:inputType="datetime"
             android:layout_height="wrap_content"
             android:textSize="20dp"
-            android:id="@+id/Show_ddl"
+            android:id="@+id/Show2_ddl"
             android:background="@color/silver" />
 
     </LinearLayout>
@@ -265,7 +283,7 @@
         android:layout_marginTop="20dp"
         android:layout_marginRight="30dp"
         android:text="返回"
-        android:id="@+id/show_home"
+        android:id="@+id/show2_home"
         android:layout_gravity="center_horizontal"
         android:textSize="20sp"
         android:textColor="@color/white"
@@ -275,9 +293,8 @@
             android:layout_width="100dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:id="@+id/show_delete"
+            android:id="@+id/show2_delete"
             android:text="删除"
-            android:visibility="invisible"
             android:layout_gravity="center_horizontal"
             android:textSize="20sp"
             android:textColor="@color/white"

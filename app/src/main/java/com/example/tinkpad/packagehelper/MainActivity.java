@@ -28,8 +28,9 @@ public class MainActivity extends AppCompatActivity {
     private TextView tv_main_title;//标题
     private TextView tv_back, tv_register, tv_find_psw;//返回键,显示的注册，找回密码
     private Button btn_login;//登录按钮
-    private String userName, psw, spPsw;//获取的用户名，密码，加密密码
+    private String psw, spPsw;//获取的用户名，密码，加密密码
     private EditText et_user_name, et_psw;//编辑框
+    public String userName;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
