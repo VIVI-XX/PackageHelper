@@ -28,6 +28,7 @@ public class HelpMeFragment extends Fragment implements AdapterView.OnItemClickL
     private SimpleAdapter adapter;
     private List<Map<String, Object>> list;
     public final String TAG="HELP";
+    String username,tel,sid;
 
 
     @Override
@@ -55,6 +56,19 @@ public class HelpMeFragment extends Fragment implements AdapterView.OnItemClickL
 
 
         });
+        if(getArguments()!=null){
+            username=getArguments().getString("user");
+            tel=getArguments().getString("tel");
+            sid=getArguments().getString("sid");
+
+        }
+
+
+
+
+
+
+
         adapter = new SimpleAdapter(getActivity(), getData(), R.layout.list_item1,
                 new String[]{"title", "com", "date","situation","code"},
                 new int[]{R.id.list1_title, R.id.list1_com, R.id.list1_date,R.id.list1_sit,R.id.list1_code});      //配置适配器，并获取对应Item中的ID

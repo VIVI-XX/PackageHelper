@@ -47,7 +47,6 @@
             android:layout_width="100dp"
             android:layout_marginTop="10dp"
             android:id="@+id/show2_code"
-            android:background="@color/silver"
             android:layout_height="wrap_content"
             android:textSize="20dp" />
 
@@ -68,7 +67,6 @@
             android:layout_marginTop="10dp"
             android:id="@+id/show2_urgent"
             android:textSize="20dp"
-            android:background="@color/silver"
             android:textStyle="bold" />
 
 
@@ -95,8 +93,7 @@
             android:layout_marginTop="20dp"
             android:layout_height="wrap_content"
             android:textSize="20dp"
-            android:id="@+id/show2_tel"
-            android:background="@color/silver" />
+            android:id="@+id/show2_tel" />
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
@@ -118,7 +115,6 @@
             android:layout_marginTop="20dp"
             android:layout_height="wrap_content"
             android:id="@+id/show2_name"
-            android:background="@color/silver"
             android:textSize="20dp" />
 
         <TextView
@@ -130,12 +126,11 @@
             android:textSize="20dp"
             android:textStyle="bold" />
 
-        <EditText
+        <TextView
             android:layout_width="100dp"
             android:layout_marginTop="20dp"
             android:layout_height="wrap_content"
             android:textSize="20dp"
-            android:background="@color/silver"
             android:id="@+id/show2_num" />
     </LinearLayout>
     <LinearLayout
@@ -158,7 +153,6 @@
             android:layout_marginTop="20dp"
             android:layout_height="wrap_content"
             android:textSize="20dp"
-            android:background="@color/silver"
             android:id="@+id/show2_com" />
 
         <TextView
@@ -175,7 +169,6 @@
             android:layout_marginTop="20dp"
             android:layout_height="wrap_content"
             android:textSize="20dp"
-            android:background="@color/silver"
             android:id="@+id/show2_shape" />
     </LinearLayout>
     <LinearLayout
@@ -194,12 +187,27 @@
             android:textStyle="bold" />
 
         <TextView
-            android:layout_width="250dp"
+            android:layout_width="100dp"
             android:layout_marginTop="20dp"
             android:id="@+id/show2_place"
             android:layout_height="wrap_content"
+            android:textSize="20dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:text="包裹重量:"
             android:textSize="20dp"
-            android:background="@color/silver" />
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_marginTop="20dp"
+            android:id="@+id/show2_weight"
+            android:layout_height="wrap_content"
+            android:textSize="20dp" />
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
@@ -221,8 +229,7 @@
             android:layout_marginTop="20dp"
             android:layout_height="wrap_content"
             android:textSize="20dp"
-            android:id="@+id/show2_money"
-            android:background="@color/silver" />
+            android:id="@+id/show2_money" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -238,8 +245,7 @@
             android:layout_marginTop="20dp"
             android:layout_height="wrap_content"
             android:textSize="20dp"
-            android:id="@+id/show2_situation"
-            android:background="@color/silver" />
+            android:id="@+id/show2_situation" />
 
 
     </LinearLayout>
@@ -265,8 +271,7 @@
             android:inputType="datetime"
             android:layout_height="wrap_content"
             android:textSize="20dp"
-            android:id="@+id/Show2_ddl"
-            android:background="@color/silver" />
+            android:id="@+id/Show2_ddl" />
 
     </LinearLayout>
 
