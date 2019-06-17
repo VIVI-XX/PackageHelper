@@ -56,12 +56,7 @@ public class HelpMeFragment extends Fragment implements AdapterView.OnItemClickL
 
 
         });
-        if(getArguments()!=null){
-            username=getArguments().getString("user");
-            tel=getArguments().getString("tel");
-            sid=getArguments().getString("sid");
 
-        }
 
 
 
@@ -175,6 +170,33 @@ public class HelpMeFragment extends Fragment implements AdapterView.OnItemClickL
         return true;
     }
     */
+
+    @Override
+    public void onStart() {
+        super.onStart();
+        if(getArguments()!=null){
+            username=getArguments().getString("user");
+            tel=getArguments().getString("tel");
+            sid=getArguments().getString("sid");
+
+        }
+
+        add = (ImageView) getActivity().findViewById(R.id.image_helpme);
+        add.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                Intent submit = new Intent(getActivity(),SubmitActivity.class);
+                Bundle bundle=new Bundle();
+                bundle.putString("studentid",sid);
+                submit.putExtras(bundle);
+                startActivity(submit);
+
+            }
+
+
+        });
+    }
 }
 
 
