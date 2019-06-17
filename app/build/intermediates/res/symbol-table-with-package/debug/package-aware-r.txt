@@ -1194,7 +1194,6 @@ id FUNCTION
 id META
 id SHIFT
 id SYM
-id Show2_ddl
 id Show_ddl
 id action0
 id action_bar
@@ -1401,6 +1400,7 @@ id selected
 id shortcut
 id show2_code
 id show2_com
+id show2_ddl
 id show2_delete
 id show2_home
 id show2_money
@@ -1412,6 +1412,7 @@ id show2_situation
 id show2_tel
 id show2_title
 id show2_urgent
+id show2_weight
 id showCustom
 id showHome
 id showTitle
@@ -1448,12 +1449,13 @@ id sub_ddl
 id sub_money
 id sub_name
 id sub_num
+id sub_other
 id sub_place
 id sub_shape
-id sub_tel
+id sub_sub
 id sub_urgent1
 id sub_urgent2
-id sub_username
+id sub_weight
 id submenuarrow
 id submit_area
 id submit_title

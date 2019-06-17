@@ -66,6 +66,7 @@
             android:layout_marginLeft="10dp"
             android:layout_marginTop="10dp"
             android:id="@+id/show2_urgent"
+            android:text="true"
             android:textSize="20dp"
             android:textStyle="bold" />
 
@@ -93,6 +94,7 @@
             android:layout_marginTop="20dp"
             android:layout_height="wrap_content"
             android:textSize="20dp"
+            android:text="17361049615"
             android:id="@+id/show2_tel" />
     </LinearLayout>
     <LinearLayout
@@ -115,6 +117,7 @@
             android:layout_marginTop="20dp"
             android:layout_height="wrap_content"
             android:id="@+id/show2_name"
+            android:text="小希"
             android:textSize="20dp" />
 
         <TextView
@@ -131,6 +134,7 @@
             android:layout_marginTop="20dp"
             android:layout_height="wrap_content"
             android:textSize="20dp"
+            android:text="2-2-112"
             android:id="@+id/show2_num" />
     </LinearLayout>
     <LinearLayout
@@ -168,6 +172,7 @@
             android:layout_width="50dp"
             android:layout_marginTop="20dp"
             android:layout_height="wrap_content"
+            android:text="小"
             android:textSize="20dp"
             android:id="@+id/show2_shape" />
     </LinearLayout>
@@ -190,6 +195,7 @@
             android:layout_width="100dp"
             android:layout_marginTop="20dp"
             android:id="@+id/show2_place"
+            android:text="榕园"
             android:layout_height="wrap_content"
             android:textSize="20dp" />
 
@@ -206,6 +212,7 @@
             android:layout_width="100dp"
             android:layout_marginTop="20dp"
             android:id="@+id/show2_weight"
+            android:text="轻"
             android:layout_height="wrap_content"
             android:textSize="20dp" />
     </LinearLayout>
@@ -229,6 +236,7 @@
             android:layout_marginTop="20dp"
             android:layout_height="wrap_content"
             android:textSize="20dp"
+            android:text="1元"
             android:id="@+id/show2_money" />
 
         <TextView
@@ -271,7 +279,7 @@
             android:inputType="datetime"
             android:layout_height="wrap_content"
             android:textSize="20dp"
-            android:id="@+id/Show2_ddl" />
+            android:id="@+id/show2_ddl" />
 
     </LinearLayout>
 

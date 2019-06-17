@@ -7,12 +7,15 @@ public class PackageMessage implements Serializable {
     private  String com;
     private  String num;
     private String date;
+    private String no;
 
 
-    public PackageMessage(String com, String num, String date) {
+
+    public PackageMessage(String com, String num, String date,String no) {
         this.com = com;
         this.num = num;
         this.date = date;
+        this.no=no;
 
     }
 
@@ -35,10 +38,18 @@ public class PackageMessage implements Serializable {
     public String getDate() {
         return date;
     }
-
     public void setDate(String date) {
         this.date = date;
     }
+
+    public void setNo(String no) {
+        this.no = no;
+    }
+    public String getNo() {
+        return no;
+    }
+
+
 
 
 }

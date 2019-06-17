@@ -11,6 +11,9 @@ public class ShowListActivity2 extends AppCompatActivity {
     Button btn_home;
     String title="";
     String code="";
+    String com="";
+    String date="";
+    String situation="";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,8 +21,14 @@ public class ShowListActivity2 extends AppCompatActivity {
         setContentView(R.layout.activity_show_list2);
         title = getIntent().getStringExtra("title");
         code = getIntent().getStringExtra("code");
+        com = getIntent().getStringExtra("com");
+        date = getIntent().getStringExtra("date");
+        situation = getIntent().getStringExtra("situation");
         ((TextView) findViewById(R.id.show2_title)).setText(title);
         ((TextView) findViewById(R.id.show2_code)).setText(code);
+        ((TextView) findViewById(R.id.show2_com)).setText(com);
+        ((TextView) findViewById(R.id.show2_ddl)).setText(date);
+        ((TextView) findViewById(R.id.show2_situation)).setText(situation);
 
 
         ActionBar actionBar = getSupportActionBar();

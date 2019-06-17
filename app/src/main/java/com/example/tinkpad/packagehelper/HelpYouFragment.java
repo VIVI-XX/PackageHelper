@@ -20,6 +20,11 @@ import android.widget.SimpleAdapter;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.mysql.jdbc.Connection;
+import com.mysql.jdbc.PreparedStatement;
+
+import java.sql.ResultSet;
+import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -53,11 +58,64 @@ public class HelpYouFragment extends Fragment {
 
 
         });
-        adapter = new SimpleAdapter(getActivity(), getData(), R.layout.list_item,
-                new String[]{"com", "num", "date","code"},
-                new int[]{R.id.list_com, R.id.list_num, R.id.list_date,R.id.list_code});      //配置适配器，并获取对应Item中的ID
-        lv.setAdapter(adapter);
+
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                int result=-1;
+                PreparedStatement ps=null;
+                Connection con=null;
+                ResultSet rs=null;
+                //获取链接数据库对象
+                con= DBConnection.getConnection();
+                //MySQL 语句
+                List<Map<String, Object>> list = new ArrayList<Map<String, Object>>();
+                Map<String, Object> map = new HashMap<String, Object>();
+
+
+
+                String sql="SELECT packageNo,companyName,code,deadline from package";
+                try {
+                    boolean closed=con.isClosed();
+                    if((con!=null)&&(!closed)){
+
+                        ps= (PreparedStatement) con.prepareStatement(sql);
+                        if(ps!=null){
+                            rs= ps.executeQuery();
+                            if(rs!=null){
+                                while(rs.next()){
+                                    String com=rs.getString("companyName");
+                                    String num=rs.getString("code");
+                                    String no=rs.getString("packageNo");
+                                    String ddl=rs.getString("deadline");
+                                    map.put("com", com);
+                                    map.put("num", num);
+                                    map.put("date", ddl);
+                                    map.put("code", no);
+                                    list.add(map);
+                                }
+
+                            }
+                        }
+
+
+                    }
+                } catch (SQLException e) {
+                    e.printStackTrace();
+                }
+                adapter = new SimpleAdapter(getActivity(),list, R.layout.list_item,
+                        new String[]{"com", "num", "date","code"},
+                        new int[]{R.id.list_com, R.id.list_num, R.id.list_date,R.id.list_code});      //配置适配器，并获取对应Item中的ID
+                lv.setAdapter(adapter);
+                DBConnection.closeAll(con,ps,rs);//关闭相关操作
+            }
+        }).start();
+
+
+
+
     }
+    /*
     //数据的获取@！
     private List<? extends Map<String, ?>> getData() {
         List<Map<String, Object>> list = new ArrayList<Map<String, Object>>();
@@ -105,7 +163,7 @@ public class HelpYouFragment extends Fragment {
         list.add(map);
 
         return list;
-    }
+    }*/
 
 
 }

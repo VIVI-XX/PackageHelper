@@ -22,7 +22,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class HelpMeFragment extends Fragment implements AdapterView.OnItemClickListener/*AdapterView.OnItemLongClickListener*/ {
+public class HelpMeFragment extends Fragment implements AdapterView.OnItemClickListener,AdapterView.OnItemLongClickListener {
     ImageView add;
     private ListView lv;
     private SimpleAdapter adapter;
@@ -44,6 +44,13 @@ public class HelpMeFragment extends Fragment implements AdapterView.OnItemClickL
         super.onActivityCreated(savedInstanceState);
         TextView tv = (TextView) getView().findViewById(R.id.text_helpme_title);
         tv.setText("       Help Me");
+        if(getArguments()!=null){
+            username=getArguments().getString("user");
+            tel=getArguments().getString("tel");
+            sid=getArguments().getString("sid");
+
+        }
+
         add = (ImageView) getActivity().findViewById(R.id.image_helpme);
         add.setOnClickListener(new View.OnClickListener() {
 
@@ -56,12 +63,6 @@ public class HelpMeFragment extends Fragment implements AdapterView.OnItemClickL
 
 
         });
-
-
-
-
-
-
 
 
         adapter = new SimpleAdapter(getActivity(), getData(), R.layout.list_item1,
@@ -80,39 +81,39 @@ public class HelpMeFragment extends Fragment implements AdapterView.OnItemClickL
         map.put("com", "圆通");
         map.put("date","2019-1-2");
         map.put("situation","未接单");
-        map.put("code","编号：6");
+        map.put("code","1");
         list.add(map);
 
         map = new HashMap<String, Object>();
         map.put("title", "我的快递2");
-        map.put("com", "圆通");
+        map.put("com", "中通");
         map.put("date","2019-1-2");
         map.put("situation","未接单");
-        map.put("code","编号：6");
+        map.put("code","6");
         list.add(map);
 
         map = new HashMap<String, Object>();
         map.put("title", "我的快递3");
-        map.put("com", "圆通");
+        map.put("com", "韵达");
         map.put("date","2019-1-2");
         map.put("situation","未接单");
-        map.put("code","编号：6");
+        map.put("code","8");
         list.add(map);
 
         map = new HashMap<String, Object>();
         map.put("title", "我的快递4");
-        map.put("com", "圆通");
+        map.put("com", "百世");
         map.put("date","2019-1-2");
         map.put("situation","未接单");
-        map.put("code","编号：6");
+        map.put("code","9");
         list.add(map);
 
         map = new HashMap<String, Object>();
         map.put("title", "我的快递5");
-        map.put("com", "圆通");
+        map.put("com", "京东");
         map.put("date","2019-1-2");
         map.put("situation","未接单");
-        map.put("code","编号：6");
+        map.put("code","10");
         list.add(map);
 
         map = new HashMap<String, Object>();
@@ -120,7 +121,7 @@ public class HelpMeFragment extends Fragment implements AdapterView.OnItemClickL
         map.put("com", "圆通");
         map.put("date","2019-1-2");
         map.put("situation","未接单");
-        map.put("code","编号：6");
+        map.put("code","12");
         list.add(map);
 
         return list;
@@ -133,28 +134,42 @@ public class HelpMeFragment extends Fragment implements AdapterView.OnItemClickL
         HashMap<String, String> map = (HashMap<String, String>) lv.getItemAtPosition(position);
         String title = map.get("title");
         String code = map.get("code");
+        String com = map.get("com");
+        String date = map.get("date");
+        String situation = map.get("situation");
 
 
 
         TextView list1_title = view.findViewById(R.id.list1_title);
         TextView list1_code = view.findViewById(R.id.list1_code);
+        TextView list1_com = view.findViewById(R.id.list1_com);
+        TextView list1_date = view.findViewById(R.id.list1_date);
+        TextView list1_sit = view.findViewById(R.id.list1_sit);
+
 
 
 
         String title1 = String.valueOf(list1_title.getText());
         String code1 = String.valueOf(list1_code.getText());
+        String com1 = String.valueOf(list1_com.getText());
+        String date1 = String.valueOf(list1_date.getText());
+        String sit1 = String.valueOf(list1_sit.getText());
 
 
         //打开新的页面，传入参数
         Intent show = new Intent(this.getActivity(), ShowListActivity2.class);
         show.putExtra("title", title1);
         show.putExtra("code", code1);
+        show.putExtra("com", com1);
+        show.putExtra("date", date1);
+        show.putExtra("situation", sit1);
+
         startActivity(show);
 
 
     }
 
-    /*@Override
+    @Override
     public boolean onItemLongClick(AdapterView<?> parent, View view, final int position, long id) {
         AlertDialog.Builder builder = new AlertDialog.Builder(this.getActivity());
         builder.setTitle("提示").setMessage("请确认是否删除当前数据").setPositiveButton("是", new DialogInterface.OnClickListener() {
@@ -169,9 +184,9 @@ public class HelpMeFragment extends Fragment implements AdapterView.OnItemClickL
         builder.create().show();
         return true;
     }
-    */
 
-    @Override
+
+    /*@Override
     public void onStart() {
         super.onStart();
         if(getArguments()!=null){
@@ -196,7 +211,7 @@ public class HelpMeFragment extends Fragment implements AdapterView.OnItemClickL
 
 
         });
-    }
+    }*/
 }
 
 
