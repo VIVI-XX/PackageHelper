@@ -1,12 +1,18 @@
 package com.example.tinkpad.packagehelper;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
+import android.os.Handler;
+import android.os.Message;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.ListFragment;
+import android.support.v4.app.NotificationCompat;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -14,7 +20,9 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import android.widget.ImageView;
+import android.widget.ListAdapter;
 import android.widget.ListView;
 import android.widget.SimpleAdapter;
 import android.widget.TextView;
@@ -23,18 +31,24 @@ import android.widget.Toast;
 import com.mysql.jdbc.Connection;
 import com.mysql.jdbc.PreparedStatement;
 
+import java.io.IOException;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class HelpYouFragment extends Fragment {
+public class HelpYouFragment extends Fragment implements Runnable {
     private ListView lv;
     private SimpleAdapter adapter;
     private List<Map<String, Object>> list;
     ImageView mine;
+    Handler handler;
+    Message msg;
+    //Bundle bundle;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -51,70 +65,94 @@ public class HelpYouFragment extends Fragment {
 
             @Override
             public void onClick(View v) {
-                Intent submit = new Intent(getActivity(),ShowListActivity.class);
+                Intent submit = new Intent(getActivity(), ShowListActivity.class);
                 startActivity(submit);
 
             }
 
 
         });
-
-        new Thread(new Runnable() {
+        handler = new Handler() {
             @Override
-            public void run() {
-                int result=-1;
-                PreparedStatement ps=null;
-                Connection con=null;
-                ResultSet rs=null;
-                //获取链接数据库对象
-                con= DBConnection.getConnection();
-                //MySQL 语句
-                List<Map<String, Object>> list = new ArrayList<Map<String, Object>>();
-                Map<String, Object> map = new HashMap<String, Object>();
-
-
-
-                String sql="SELECT packageNo,companyName,code,deadline from package";
-                try {
-                    boolean closed=con.isClosed();
-                    if((con!=null)&&(!closed)){
-
-                        ps= (PreparedStatement) con.prepareStatement(sql);
-                        if(ps!=null){
-                            rs= ps.executeQuery();
-                            if(rs!=null){
-                                while(rs.next()){
-                                    String com=rs.getString("companyName");
-                                    String num=rs.getString("code");
-                                    String no=rs.getString("packageNo");
-                                    String ddl=rs.getString("deadline");
-                                    map.put("com", com);
-                                    map.put("num", num);
-                                    map.put("date", ddl);
-                                    map.put("code", no);
-                                    list.add(map);
-                                }
-
-                            }
-                        }
-
-
-                    }
-                } catch (SQLException e) {
-                    e.printStackTrace();
+            public void handleMessage(Message msg) {
+                if (msg.what == 7) {
+                    ArrayList<Map<String, Object>> list3 = new ArrayList<Map<String, Object>>();
+                    Bundle bundle = msg.getData();
+                    ArrayList list = bundle.getParcelableArrayList("list");
+                    list3= (ArrayList<Map<String, Object>>) list.get(0);
+                    adapter = new SimpleAdapter(getActivity(), list3, R.layout.list_item,
+                            new String[]{"com", "num", "date", "code"},
+                            new int[]{R.id.list_com, R.id.list_num, R.id.list_date, R.id.list_code});      //配置适配器，并获取对应Item中的ID
+                    lv.setAdapter(adapter);
                 }
-                adapter = new SimpleAdapter(getActivity(),list, R.layout.list_item,
-                        new String[]{"com", "num", "date","code"},
-                        new int[]{R.id.list_com, R.id.list_num, R.id.list_date,R.id.list_code});      //配置适配器，并获取对应Item中的ID
-                lv.setAdapter(adapter);
-                DBConnection.closeAll(con,ps,rs);//关闭相关操作
+                super.handleMessage(msg);
+
+
             }
-        }).start();
 
-
+        };
+        Thread t = new Thread(this);
+        t.start();
 
 
     }
+
+
+    @Override
+    public void run() {
+        PreparedStatement ps=null;
+        Connection con=null;
+        ResultSet rs=null;
+//获取链接数据库对象
+        con= DBConnection.getConnection();
+        //MySQL 语句
+        ArrayList<Map<String, Object>> list = new ArrayList<Map<String, Object>>();
+
+
+        String sql="SELECT packageNo,companyName,code,deadline from package";
+        try {
+            boolean closed=con.isClosed();
+            if((con!=null)&&(!closed)){
+
+                ps= (PreparedStatement) con.prepareStatement(sql);
+                if(ps!=null){
+                    rs= ps.executeQuery();
+                    if(rs!=null){
+                        while(rs.next()){
+                            Map<String, Object> map = new HashMap<String, Object>();
+                            String com=rs.getString("companyName");
+                            String num=rs.getString("code");
+                            String no=rs.getString("packageNo");
+                            String ddl=rs.getString("deadline");
+                            map.put("com", com);
+                            map.put("num", num);
+                            map.put("date", ddl);
+                            map.put("code", no);
+                            list.add(map);
+                        }
+
+                    }
+                }
+
+
+            }
+        } catch (SQLException e) {
+            Log.e("DB", "run: " + e.toString());
+            e.printStackTrace();
+        }
+        Message msg=handler.obtainMessage(7);
+        Bundle bundle=new Bundle();
+        ArrayList list1 = new ArrayList(); //这个list用于在budnle中传递 需要传递的ArrayList<Object>
+        list1.add(list);
+        bundle.putParcelableArrayList("list",list1);
+        msg.setData(bundle);
+        handler.sendMessage(msg);
+
+
+    }
+}
+
+
     /*
     //数据的获取@！
     private List<? extends Map<String, ?>> getData() {
@@ -166,4 +204,4 @@ public class HelpYouFragment extends Fragment {
     }*/
 
 
-}
+

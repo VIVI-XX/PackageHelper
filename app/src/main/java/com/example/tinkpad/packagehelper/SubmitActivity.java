@@ -34,7 +34,7 @@ public class SubmitActivity extends AppCompatActivity {
         if (actionBar != null) {
             actionBar.hide();
         }
-        sub = (Button) findViewById(R.id.bt_msg_submit);
+        /*sub = (Button) findViewById(R.id.bt_msg_submit);
         sub.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 finish();

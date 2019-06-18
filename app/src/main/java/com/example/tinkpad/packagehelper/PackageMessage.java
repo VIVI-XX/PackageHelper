@@ -11,7 +11,7 @@ public class PackageMessage implements Serializable {
 
 
 
-    public PackageMessage(String com, String num, String date,String no) {
+    public PackageMessage() {
         this.com = com;
         this.num = num;
         this.date = date;

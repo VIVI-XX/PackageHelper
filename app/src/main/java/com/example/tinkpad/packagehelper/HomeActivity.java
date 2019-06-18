@@ -1,6 +1,7 @@
 package com.example.tinkpad.packagehelper;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentManager;
@@ -19,8 +20,8 @@ import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
 
-public class HomeActivity extends Fragment {
-    Button btn_add;
+public class HomeActivity extends Fragment{
+    Button btn_add,btn_query;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -45,14 +46,29 @@ public class HomeActivity extends Fragment {
 
 
         });
+        btn_query=(Button) getView().findViewById(R.id.btn_query);
+        btn_query.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent();
+                intent.setData(Uri.parse("https://www.kuaidi100.com"));
+                intent.setAction(Intent.ACTION_VIEW);
+                startActivity(intent);
+
+            }
+
+
+        });
+
+
+
+
 
 
     }
 
 
 
-
-
-
-    }
+}
 

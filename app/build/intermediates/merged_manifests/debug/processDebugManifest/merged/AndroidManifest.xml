@@ -21,18 +21,19 @@
         android:testOnly="true"
         android:theme="@style/AppTheme" >
         <activity android:name="com.example.tinkpad.packagehelper.MainActivity" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity android:name="com.example.tinkpad.packagehelper.RegisterActivity" />
         <activity android:name="com.example.tinkpad.packagehelper.Frame" />
         <activity android:name="com.example.tinkpad.packagehelper.SubmitActivity" />
         <activity android:name="com.example.tinkpad.packagehelper.ShowListActivity" />
         <activity android:name="com.example.tinkpad.packagehelper.ShowListActivity2" />
-        <activity android:name="com.example.tinkpad.packagehelper.AddPersonalMsg" >
+        <activity android:name="com.example.tinkpad.packagehelper.AddPersonalMsg" />
+        <activity android:name="com.example.tinkpad.packagehelper.HelpYouList" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
     </application>
 

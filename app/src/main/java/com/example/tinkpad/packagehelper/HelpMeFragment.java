@@ -53,12 +53,10 @@ public class HelpMeFragment extends Fragment implements AdapterView.OnItemClickL
 
         add = (ImageView) getActivity().findViewById(R.id.image_helpme);
         add.setOnClickListener(new View.OnClickListener() {
-
             @Override
             public void onClick(View v) {
                 Intent submit = new Intent(getActivity(),SubmitActivity.class);
                 startActivity(submit);
-
             }
 
 
