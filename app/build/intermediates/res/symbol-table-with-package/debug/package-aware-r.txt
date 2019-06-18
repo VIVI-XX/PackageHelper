@@ -1343,6 +1343,7 @@ id ll_login_username
 id ll_msg_dom
 id ll_msg_id
 id ll_msg_tel
+id lv_help
 id masked
 id media_actions
 id message
@@ -1403,6 +1404,7 @@ id show2_code
 id show2_com
 id show2_ddl
 id show2_delete
+id show2_helper_tel
 id show2_home
 id show2_money
 id show2_name
@@ -1447,15 +1449,14 @@ id status_bar_latest_event_content
 id stretch
 id sub_com
 id sub_ddl
+id sub_id
 id sub_money
 id sub_name
 id sub_num
-id sub_other
 id sub_place
 id sub_shape
 id sub_sub
-id sub_urgent1
-id sub_urgent2
+id sub_urgent
 id sub_weight
 id submenuarrow
 id submit_area

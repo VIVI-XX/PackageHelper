@@ -10,6 +10,7 @@ import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.RadioButton;
+import android.widget.RadioGroup;
 import android.widget.TextView;
 
 import com.mysql.jdbc.PreparedStatement;
@@ -18,9 +19,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 
 public class SubmitActivity extends AppCompatActivity {
-    public static TextView s_name, s_num, s_com, s_shape, s_place, s_money, s_ddl, s_weight;
-    public static RadioButton s_urgent1, s_urgent2;
-    String name, num, com, shape, weight, place, urgent, money;
+    String name, num, com, shape, weight, place, urgent, money,id;
     String ddl;
     String state = "未接单";
     Button sub;
@@ -34,16 +33,8 @@ public class SubmitActivity extends AppCompatActivity {
         if (actionBar != null) {
             actionBar.hide();
         }
-        /*sub = (Button) findViewById(R.id.bt_msg_submit);
-        sub.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                finish();
-            }
-        });
 
-
-
-        /*sub=(Button)findViewById(R.id.bt_msg_submit);
+        sub=(Button)findViewById(R.id.sub_sub);
         sub.setOnClickListener(new View.OnClickListener() {
 
             @Override
@@ -56,23 +47,21 @@ public class SubmitActivity extends AppCompatActivity {
                 place=((TextView) findViewById(R.id.sub_place)).getText().toString();
                 money=((TextView) findViewById(R.id.sub_money)).getText().toString();
                 ddl=((TextView) findViewById(R.id.sub_ddl)).getText().toString();
-                if(s_urgent1.isChecked()){
-                    urgent=((RadioButton) findViewById(R.id.sub_urgent1)).getText().toString();
-                }else{
-                    urgent=((RadioButton) findViewById(R.id.sub_urgent2)).getText().toString();
-                }
+                urgent=((TextView) findViewById(R.id.sub_urgent)).getText().toString();
+                id=((TextView) findViewById(R.id.sub_id)).getText().toString();
+
+
                 new Thread(new Runnable() {
                     @Override
                     public void run() {
-                        int result1,result2=-1;
+                        int result=-1;
                         PreparedStatement ps=null;
                         com.mysql.jdbc.Connection con=null;
                         ResultSet rs=null;
                         //获取链接数据库对象
                         con= DBConnection.getConnection();
                         //MySQL 语句
-                        String sql1="INSERT INTO package (studentId,companyName,code,size,weight,name) VALUES (?,?,?,?,?,?)";
-                        String sql2="INSERT INTO order (deadline,urgent,price,state,address) VALUES (?,?,?,?,?)";
+                        String sql1="INSERT INTO package (studentId,companyName,code,size,weight,name,deadline,urgent,price,state,address) VALUES (?,?,?,?,?,?,?,?,?,?,?)";
 
                         try {
                             boolean closed=con.isClosed();
@@ -80,22 +69,18 @@ public class SubmitActivity extends AppCompatActivity {
 
                                 ps= (PreparedStatement) con.prepareStatement(sql1);
 
-                                ps.setString(1,"41723068");//第一个参数 name 规则同上
+                                ps.setString(1,id);//第一个参数 name 规则同上
                                 ps.setString(2,com);//第二个参数 phone 规则同上
                                 ps.setString(3,num);//第三个参数 content 规则同上
                                 ps.setString(4,shape);//第四个参数 state 规则同上
                                 ps.setString(5,weight);
                                 ps.setString(6,name);
-                                result1=ps.executeUpdate();//返回1 执行成功
-
-                                ps= (PreparedStatement) con.prepareStatement(sql2);
-
-                                ps.setString(1,ddl);//第一个参数 name 规则同上
-                                ps.setString(2,urgent);//第二个参数 phone 规则同上
-                                ps.setString(3,money);//第三个参数 content 规则同上
-                                ps.setString(4,state);//第四个参数 state 规则同上
-                                ps.setString(5,place);
-                                result1=ps.executeUpdate();//返回1 执行成功
+                                ps.setString(7,ddl);//第一个参数 name 规则同上
+                                ps.setString(8,urgent);//第二个参数 phone 规则同上
+                                ps.setString(9,money);//第三个参数 content 规则同上
+                                ps.setString(10,state);//第四个参数 state 规则同上
+                                ps.setString(11,place);
+                                result=ps.executeUpdate();//返回1 执行成功
                                 Intent intent = new Intent(SubmitActivity.this, Frame.class);
                                 intent.putExtra("id",2);
 
@@ -115,7 +100,7 @@ public class SubmitActivity extends AppCompatActivity {
             }
 
 
-        });*/
+        });
 
 
     }

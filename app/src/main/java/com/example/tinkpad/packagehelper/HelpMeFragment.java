@@ -67,7 +67,8 @@ public class HelpMeFragment extends Fragment implements AdapterView.OnItemClickL
                 new String[]{"title", "com", "date","situation","code"},
                 new int[]{R.id.list1_title, R.id.list1_com, R.id.list1_date,R.id.list1_sit,R.id.list1_code});      //配置适配器，并获取对应Item中的ID
         lv.setAdapter(adapter);
-        lv.setOnItemClickListener((AdapterView.OnItemClickListener) this);
+        lv.setOnItemClickListener(this);
+        lv.setOnItemLongClickListener(this);
     }
     //数据的获取@！
     private List<? extends Map<String, ?>> getData() {
@@ -184,32 +185,7 @@ public class HelpMeFragment extends Fragment implements AdapterView.OnItemClickL
     }
 
 
-    /*@Override
-    public void onStart() {
-        super.onStart();
-        if(getArguments()!=null){
-            username=getArguments().getString("user");
-            tel=getArguments().getString("tel");
-            sid=getArguments().getString("sid");
 
-        }
-
-        add = (ImageView) getActivity().findViewById(R.id.image_helpme);
-        add.setOnClickListener(new View.OnClickListener() {
-
-            @Override
-            public void onClick(View v) {
-                Intent submit = new Intent(getActivity(),SubmitActivity.class);
-                Bundle bundle=new Bundle();
-                bundle.putString("studentid",sid);
-                submit.putExtras(bundle);
-                startActivity(submit);
-
-            }
-
-
-        });
-    }*/
 }
 
 

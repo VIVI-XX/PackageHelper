@@ -41,7 +41,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class HelpYouFragment extends Fragment implements Runnable {
+public class HelpYouFragment extends Fragment implements Runnable,AdapterView.OnItemClickListener {
     private ListView lv;
     private SimpleAdapter adapter;
     private List<Map<String, Object>> list;
@@ -60,6 +60,7 @@ public class HelpYouFragment extends Fragment implements Runnable {
     @Override
     public void onActivityCreated(Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
+
         mine = (ImageView) getActivity().findViewById(R.id.image_helpyou);
         mine.setOnClickListener(new View.OnClickListener() {
 
@@ -93,6 +94,7 @@ public class HelpYouFragment extends Fragment implements Runnable {
         };
         Thread t = new Thread(this);
         t.start();
+        lv.setOnItemClickListener(this);
 
 
     }
@@ -148,6 +150,16 @@ public class HelpYouFragment extends Fragment implements Runnable {
         msg.setData(bundle);
         handler.sendMessage(msg);
 
+
+    }
+
+    @Override
+    public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+        HashMap<String, String> map = (HashMap<String, String>) lv.getItemAtPosition(position);
+        String code = map.get("code");
+        Intent show = new Intent(this.getActivity(), ShowListActivity.class);
+        show.putExtra("code",code);
+        startActivity(show);
 
     }
 }
