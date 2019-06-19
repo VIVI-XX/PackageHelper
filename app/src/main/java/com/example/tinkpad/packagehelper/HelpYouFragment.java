@@ -103,6 +103,35 @@ public class HelpYouFragment extends Fragment implements Runnable,AdapterView.On
 
 
     @Override
+    public void onStart() {
+        super.onStart();
+        handler = new Handler() {
+            @Override
+            public void handleMessage(Message msg) {
+                if (msg.what == 7) {
+                    ArrayList<Map<String, Object>> list3 = new ArrayList<Map<String, Object>>();
+                    Bundle bundle = msg.getData();
+                    ArrayList list = bundle.getParcelableArrayList("list");
+                    list3= (ArrayList<Map<String, Object>>) list.get(0);
+                    adapter = new SimpleAdapter(getActivity(), list3, R.layout.list_item,
+                            new String[]{"com", "num", "date", "packageno"},
+                            new int[]{R.id.list_com, R.id.list_num, R.id.list_date, R.id.list_code});      //配置适配器，并获取对应Item中的ID
+                    lv.setAdapter(adapter);
+                }
+                super.handleMessage(msg);
+
+
+            }
+
+        };
+        Thread t = new Thread(this);
+        t.start();
+        lv.setOnItemClickListener(this);
+
+    }
+    
+
+    @Override
     public void run() {
         PreparedStatement ps=null;
         Connection con=null;
@@ -113,7 +142,7 @@ public class HelpYouFragment extends Fragment implements Runnable,AdapterView.On
         ArrayList<Map<String, Object>> list = new ArrayList<Map<String, Object>>();
 
 
-        String sql="SELECT packageNo,companyName,code,deadline from package";
+        String sql="SELECT packageNo,companyName,code,deadline from package where state='未接单'";
         try {
             boolean closed=con.isClosed();
             if((con!=null)&&(!closed)){
@@ -217,6 +246,7 @@ public class HelpYouFragment extends Fragment implements Runnable,AdapterView.On
 
         return list;
     }*/
+
 
 
 

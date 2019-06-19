@@ -1,6 +1,7 @@
 package com.example.tinkpad.packagehelper;
 
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.Handler;
 import android.os.Message;
 import android.support.v7.app.ActionBar;
@@ -8,7 +9,9 @@ import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
 import android.widget.Adapter;
+import android.widget.AdapterView;
 import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.SimpleAdapter;
@@ -23,7 +26,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class HelpYouList extends AppCompatActivity implements Runnable {
+public class HelpYouList extends AppCompatActivity implements Runnable,AdapterView.OnItemClickListener {
     ListView lv;
     Handler handler;
     SimpleAdapter adapter;
@@ -58,6 +61,7 @@ public class HelpYouList extends AppCompatActivity implements Runnable {
         };
         Thread t = new Thread(this);
         t.start();
+        lv.setOnItemClickListener(this);
 
     }
 
@@ -112,5 +116,43 @@ public class HelpYouList extends AppCompatActivity implements Runnable {
         handler.sendMessage(msg);
 
 
+    }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+        id=getIntent().getStringExtra("data");
+        handler = new Handler() {
+            @Override
+            public void handleMessage(Message msg) {
+                if (msg.what == 7) {
+                    ArrayList<Map<String, Object>> list3 = new ArrayList<Map<String, Object>>();
+                    Bundle bundle = msg.getData();
+                    ArrayList list = bundle.getParcelableArrayList("list");
+                    list3 = (ArrayList<Map<String, Object>>) list.get(0);
+                    adapter = new SimpleAdapter(HelpYouList.this, list3, R.layout.list_item,
+                            new String[]{"com", "num", "date", "code"},
+                            new int[]{R.id.list_com, R.id.list_num, R.id.list_date, R.id.list_code});      //配置适配器，并获取对应Item中的ID
+                    lv.setAdapter(adapter);
+                }
+                super.handleMessage(msg);
+
+
+            }
+
+        };
+        Thread t = new Thread(this);
+        t.start();
+        lv.setOnItemClickListener(this);
+
+    }
+
+    @Override
+    public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+        HashMap<String, String> map = (HashMap<String, String>) lv.getItemAtPosition(position);
+        String packageno = map.get("code");
+        Intent show = new Intent(HelpYouList.this, ShowListActivity3.class);
+        show.putExtra("packageno",packageno);
+        startActivity(show);
     }
 }

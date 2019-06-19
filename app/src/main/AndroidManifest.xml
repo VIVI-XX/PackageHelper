@@ -26,7 +26,8 @@
         <activity android:name=".AddPersonalMsg" />
         <activity android:name=".HelpYouList" />
         <activity android:name=".HelpYouListAlert" />
-        <activity android:name=".HelpYou"></activity>
+        <activity android:name=".HelpYou" />
+        <activity android:name=".ShowListActivity3"></activity>
     </application>
 
 </manifest>

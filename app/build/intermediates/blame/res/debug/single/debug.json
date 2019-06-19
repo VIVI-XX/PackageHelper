@@ -2080,6 +2080,10 @@
         "source": "C:\\Users\\Tinkpad\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\263fe042ab5ff62eae804b8452d49c96\\res\\color-v23\\abc_tint_edittext.xml"
     },
     {
+        "merged": "F:\\PackageHelper\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_show_list3.xml.flat",
+        "source": "F:\\PackageHelper\\app\\src\\main\\res\\layout\\activity_show_list3.xml"
+    },
+    {
         "merged": "F:\\PackageHelper\\app\\build\\intermediates\\res\\merged\\debug\\drawable_tooltip_frame_dark.xml.flat",
         "source": "C:\\Users\\Tinkpad\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\263fe042ab5ff62eae804b8452d49c96\\res\\drawable\\tooltip_frame_dark.xml"
     },

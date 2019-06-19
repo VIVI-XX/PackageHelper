@@ -36,6 +36,7 @@
         <activity android:name="com.example.tinkpad.packagehelper.HelpYouList" />
         <activity android:name="com.example.tinkpad.packagehelper.HelpYouListAlert" />
         <activity android:name="com.example.tinkpad.packagehelper.HelpYou" />
+        <activity android:name="com.example.tinkpad.packagehelper.ShowListActivity3" />
     </application>
 
 </manifest>
