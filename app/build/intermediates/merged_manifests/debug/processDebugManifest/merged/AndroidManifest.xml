@@ -29,13 +29,13 @@
         </activity>
         <activity android:name="com.example.tinkpad.packagehelper.RegisterActivity" />
         <activity android:name="com.example.tinkpad.packagehelper.Frame" />
-        <activity android:name="com.example.tinkpad.packagehelper.SubmitActivity" >
-        </activity>
+        <activity android:name="com.example.tinkpad.packagehelper.SubmitActivity" />
         <activity android:name="com.example.tinkpad.packagehelper.ShowListActivity" />
         <activity android:name="com.example.tinkpad.packagehelper.ShowListActivity2" />
         <activity android:name="com.example.tinkpad.packagehelper.AddPersonalMsg" />
-        <activity android:name="com.example.tinkpad.packagehelper.HelpYouList" >
-        </activity>
+        <activity android:name="com.example.tinkpad.packagehelper.HelpYouList" />
+        <activity android:name="com.example.tinkpad.packagehelper.HelpYouListAlert" />
+        <activity android:name="com.example.tinkpad.packagehelper.HelpYou" />
     </application>
 
 </manifest>

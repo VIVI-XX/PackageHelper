@@ -2,6 +2,7 @@ package com.example.tinkpad.packagehelper;
 
 import android.content.Intent;
 import android.os.Handler;
+import android.os.Looper;
 import android.os.Message;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -27,6 +28,7 @@ public class AddPersonalMsg extends AppCompatActivity {
     String username, tel, dom, id;
     String TAG = "Addmsg";
     Handler handler;
+    int result=-1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,13 +48,13 @@ public class AddPersonalMsg extends AppCompatActivity {
                 new Thread(new Runnable() {
                     @Override
                     public void run() {
-                        int result=-1;
+
                         PreparedStatement ps=null;
                         com.mysql.jdbc.Connection con=null;
                         ResultSet rs=null;
-                            //获取链接数据库对象
+                        //获取链接数据库对象
                         con= DBConnection.getConnection();
-                            //MySQL 语句
+                        //MySQL 语句
                         String sql="INSERT INTO user (studentId,userName,phoneNo,dormitory) VALUES (?,?,?,?)";
                         try {
                             boolean closed=con.isClosed();
@@ -70,15 +72,22 @@ public class AddPersonalMsg extends AppCompatActivity {
                                 intent.putExtra("username",username);
                                 intent.putExtra("tel",tel);
                                 intent.putExtra("sid",id);
-
-
                                 startActivity(intent);
 
-                                }
-                            } catch (SQLException e) {
-                                e.printStackTrace();
                             }
-                            DBConnection.closeAll(con,ps);//关闭相关操作
+                        } catch (SQLException e) {
+                            e.printStackTrace();
+                        }
+                        DBConnection.closeAll(con,ps);//关闭相关操作
+                        if(result==1){
+                            Looper.prepare();
+                            Toast.makeText(AddPersonalMsg.this, "提交成功！感谢您的配合！", Toast.LENGTH_SHORT).show();
+                            Looper.loop();
+                        }else{
+                            Looper.prepare();
+                            Toast.makeText(AddPersonalMsg.this, "提交失败！请稍后重试！", Toast.LENGTH_SHORT).show();
+                            Looper.loop();
+                        }
                     }
                 }).start();
 

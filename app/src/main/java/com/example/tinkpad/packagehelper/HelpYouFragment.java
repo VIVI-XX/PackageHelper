@@ -1,6 +1,7 @@
 package com.example.tinkpad.packagehelper;
 
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Handler;
@@ -21,6 +22,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.ListAdapter;
 import android.widget.ListView;
@@ -66,7 +68,7 @@ public class HelpYouFragment extends Fragment implements Runnable,AdapterView.On
 
             @Override
             public void onClick(View v) {
-                Intent submit = new Intent(getActivity(), ShowListActivity.class);
+                Intent submit = new Intent(getActivity(), HelpYouListAlert.class);
                 startActivity(submit);
 
             }
@@ -82,7 +84,7 @@ public class HelpYouFragment extends Fragment implements Runnable,AdapterView.On
                     ArrayList list = bundle.getParcelableArrayList("list");
                     list3= (ArrayList<Map<String, Object>>) list.get(0);
                     adapter = new SimpleAdapter(getActivity(), list3, R.layout.list_item,
-                            new String[]{"com", "num", "date", "code"},
+                            new String[]{"com", "num", "date", "packageno"},
                             new int[]{R.id.list_com, R.id.list_num, R.id.list_date, R.id.list_code});      //配置适配器，并获取对应Item中的ID
                     lv.setAdapter(adapter);
                 }
@@ -105,7 +107,7 @@ public class HelpYouFragment extends Fragment implements Runnable,AdapterView.On
         PreparedStatement ps=null;
         Connection con=null;
         ResultSet rs=null;
-//获取链接数据库对象
+        //获取链接数据库对象
         con= DBConnection.getConnection();
         //MySQL 语句
         ArrayList<Map<String, Object>> list = new ArrayList<Map<String, Object>>();
@@ -129,7 +131,7 @@ public class HelpYouFragment extends Fragment implements Runnable,AdapterView.On
                             map.put("com", com);
                             map.put("num", num);
                             map.put("date", ddl);
-                            map.put("code", no);
+                            map.put("packageno", no);
                             list.add(map);
                         }
 
@@ -142,6 +144,7 @@ public class HelpYouFragment extends Fragment implements Runnable,AdapterView.On
             Log.e("DB", "run: " + e.toString());
             e.printStackTrace();
         }
+        DBConnection.closeAll(con,ps);//关闭相关操作
         Message msg=handler.obtainMessage(7);
         Bundle bundle=new Bundle();
         ArrayList list1 = new ArrayList(); //这个list用于在budnle中传递 需要传递的ArrayList<Object>
@@ -156,9 +159,9 @@ public class HelpYouFragment extends Fragment implements Runnable,AdapterView.On
     @Override
     public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
         HashMap<String, String> map = (HashMap<String, String>) lv.getItemAtPosition(position);
-        String code = map.get("code");
+        String packageno = map.get("packageno");
         Intent show = new Intent(this.getActivity(), ShowListActivity.class);
-        show.putExtra("code",code);
+        show.putExtra("packageno",packageno);
         startActivity(show);
 
     }

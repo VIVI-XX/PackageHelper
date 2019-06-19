@@ -1154,6 +1154,7 @@ drawable design_ic_visibility
 drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
+drawable help
 drawable helpme
 drawable helpyou
 drawable home
@@ -1194,7 +1195,6 @@ id FUNCTION
 id META
 id SHIFT
 id SYM
-id Show_ddl
 id action0
 id action_bar
 id action_bar_activity_content
@@ -1232,6 +1232,7 @@ id bt_msg_submit
 id btn_home
 id btn_query
 id btn_register
+id btn_save
 id buttonPanel
 id cancel_action
 id center
@@ -1265,6 +1266,8 @@ id end
 id end_padder
 id enterAlways
 id enterAlwaysCollapsed
+id et_help_id
+id et_help_phone
 id et_login_pwd
 id et_login_username
 id et_msg_dom
@@ -1291,6 +1294,8 @@ id ghost_view
 id gone
 id group_divider
 id groups
+id help_id_icon
+id help_phone_icon
 id home
 id homeAsUp
 id home_addmsg
@@ -1305,6 +1310,8 @@ id info
 id invisible
 id italic
 id item_touch_helper_previous_elevation
+id iv_help_id_del
+id iv_help_phone_del
 id iv_login_logo
 id iv_login_pwd_del
 id iv_login_pwd_icon
@@ -1317,6 +1324,8 @@ id iv_msg_id_icon
 id iv_msg_tel_del
 id iv_msg_tel_icon
 id iv_msg_username_del
+id l_help_id
+id l_help_phone
 id l_msg_username
 id labeled
 id largeLabel
@@ -1420,17 +1429,19 @@ id showCustom
 id showHome
 id showTitle
 id show_com
-id show_delete
+id show_ddl
+id show_help
 id show_home
+id show_id
 id show_money
 id show_name
 id show_num
+id show_packageno
 id show_place
 id show_shape
-id show_tel
 id show_title
 id show_urgent
-id show_username
+id show_weight
 id smallLabel
 id snackbar_action
 id snackbar_text
@@ -1549,8 +1560,11 @@ layout abc_tooltip
 layout activity_add_personal_msg
 layout activity_fragment
 layout activity_help_me_fragment
+layout activity_help_you
+layout activity_help_you_alert
 layout activity_help_you_fragment
 layout activity_help_you_list
+layout activity_help_you_list_alert
 layout activity_home
 layout activity_main
 layout activity_register
@@ -1602,6 +1616,7 @@ mipmap ic_launcher
 mipmap ic_launcher_round
 mipmap id
 mipmap msg_img
+mipmap phone
 mipmap tel
 string abc_action_bar_home_description
 string abc_action_bar_up_description
