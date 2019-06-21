@@ -65,6 +65,7 @@ public class HelpMeFragment extends Fragment implements Runnable,AdapterView.OnI
             public void onClick(View v) {
                 Intent submit = new Intent(getActivity(),SubmitActivity.class);
                 startActivity(submit);
+
             }
 
 
@@ -151,6 +152,7 @@ public class HelpMeFragment extends Fragment implements Runnable,AdapterView.OnI
         return list;
     }
     */
+    /*
 
     @Override
     public void onStart() {
@@ -180,6 +182,8 @@ public class HelpMeFragment extends Fragment implements Runnable,AdapterView.OnI
         lv.setOnItemLongClickListener(this);
 
     }
+    */
+
 
     @Override
     public void onItemClick(AdapterView<?> parent, View view, int position, long id) {

@@ -1185,6 +1185,7 @@ drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
 drawable pen
+drawable search
 drawable shape1
 drawable shape2
 drawable tooltip_frame_dark
@@ -1299,6 +1300,7 @@ id help_phone_icon
 id home
 id homeAsUp
 id home_addmsg
+id home_contact
 id icon
 id icon_group
 id ifRoom
@@ -1630,6 +1632,7 @@ mipmap ic_launcher_round
 mipmap id
 mipmap msg_img
 mipmap phone
+mipmap search
 mipmap tel
 string abc_action_bar_home_description
 string abc_action_bar_up_description

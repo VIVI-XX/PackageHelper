@@ -1,6 +1,7 @@
 package com.example.tinkpad.packagehelper;
 
 import android.content.Intent;
+import android.os.Looper;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -12,6 +13,7 @@ import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.mysql.jdbc.PreparedStatement;
 
@@ -92,6 +94,15 @@ public class SubmitActivity extends AppCompatActivity {
                             e.printStackTrace();
                         }
                         DBConnection.closeAll(con,ps);//关闭相关操作
+                        if(result==1){
+                            Looper.prepare();
+                            Toast.makeText(SubmitActivity.this, "提交成功！你的帮帮单助手正在赶来的路上！！", Toast.LENGTH_SHORT).show();
+                            Looper.loop();
+                        }else{
+                            Looper.prepare();
+                            Toast.makeText(SubmitActivity.this, "提交失败！请稍后重试！", Toast.LENGTH_SHORT).show();
+                            Looper.loop();
+                        }
                     }
                 }).start();
 

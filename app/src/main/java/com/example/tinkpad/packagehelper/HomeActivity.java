@@ -21,7 +21,7 @@ import android.widget.RadioGroup;
 import android.widget.TextView;
 
 public class HomeActivity extends Fragment{
-    Button btn_add,btn_query;
+    Button btn_add,btn_query,btn_contact;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -46,6 +46,20 @@ public class HomeActivity extends Fragment{
 
 
         });
+        btn_contact=(Button) getView().findViewById(R.id.home_contact);
+        btn_contact.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Intent.ACTION_DIAL,Uri.parse("tel:" +"17361049615"));
+                intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                startActivity(intent);
+
+            }
+
+
+        });
+
         btn_query=(Button) getView().findViewById(R.id.btn_query);
         btn_query.setOnClickListener(new View.OnClickListener() {
 

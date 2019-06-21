@@ -69,16 +69,40 @@
                 android:textColor="@color/gray"
                 android:textSize="13sp"></TextView>
         </ScrollView>
-    <Button
+
+    <LinearLayout
         android:layout_width="wrap_content"
-        android:layout_height="35dp"
-        android:layout_gravity="center_horizontal"
-        android:background="@color/colorPrimary"
-        android:text="完善个人信息"
-        android:textColor="@color/white"
-        android:layout_marginTop="10dp"
-        android:textStyle="bold"
-        android:id="@+id/home_addmsg"/>
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_horizontal">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/colorPrimary"
+            android:text="完善个人信息"
+            android:textColor="@color/white"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:id="@+id/home_addmsg"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_marginLeft="50dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/colorPrimary"
+            android:text="Contact Us"
+            android:textColor="@color/white"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:id="@+id/home_contact"/>
+
+
+    </LinearLayout>
+
 
 
 

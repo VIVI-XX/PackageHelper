@@ -101,7 +101,9 @@ ADDED from F:\PackageHelper\app\src\main\AndroidManifest.xml:21:9-54
 	android:name
 		ADDED from F:\PackageHelper\app\src\main\AndroidManifest.xml:21:19-51
 activity#com.example.tinkpad.packagehelper.Frame
-ADDED from F:\PackageHelper\app\src\main\AndroidManifest.xml:22:9-43
+ADDED from F:\PackageHelper\app\src\main\AndroidManifest.xml:22:9-74
+	android:launchMode
+		ADDED from F:\PackageHelper\app\src\main\AndroidManifest.xml:22:41-72
 	android:name
 		ADDED from F:\PackageHelper\app\src\main\AndroidManifest.xml:22:19-40
 activity#com.example.tinkpad.packagehelper.SubmitActivity
