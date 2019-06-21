@@ -1,5 +1,7 @@
 package com.example.tinkpad.packagehelper;
 
+import android.app.DatePickerDialog;
+import android.app.TimePickerDialog;
 import android.content.Intent;
 import android.os.Looper;
 import android.support.v7.app.ActionBar;
@@ -9,28 +11,34 @@ import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.Button;
+import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
+import android.widget.TimePicker;
 import android.widget.Toast;
 
 import com.mysql.jdbc.PreparedStatement;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.Calendar;
 
-public class SubmitActivity extends AppCompatActivity {
+public class SubmitActivity extends AppCompatActivity implements View.OnClickListener,DatePickerDialog.OnDateSetListener {
     String name, num, com, shape, weight, place, urgent, money,id;
     String ddl;
     String state = "未接单";
     Button sub;
+    TextView date;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_submit);
+        date=((TextView) findViewById(R.id.sub_ddl));
+        date.setOnClickListener(this);
         ActionBar actionBar = getSupportActionBar();
         if (actionBar != null) {
             actionBar.hide();
@@ -50,7 +58,7 @@ public class SubmitActivity extends AppCompatActivity {
                 money=((TextView) findViewById(R.id.sub_money)).getText().toString();
                 ddl=((TextView) findViewById(R.id.sub_ddl)).getText().toString();
                 urgent=((TextView) findViewById(R.id.sub_urgent)).getText().toString();
-                id=((TextView) findViewById(R.id.sub_id)).getText().toString();
+                id=date.getText().toString();
 
 
                 new Thread(new Runnable() {
@@ -115,4 +123,28 @@ public class SubmitActivity extends AppCompatActivity {
 
 
     }
+
+    @Override
+    public void onDateSet(DatePicker view, int year, int month, int dayOfMonth) {
+        String desc=String.format("%d-%d-%d",year,month+1,dayOfMonth);
+        date.setText(desc);
+    }
+
+
+
+    @Override
+    public void onClick(View v) {
+        if (v.getId()==R.id.sub_ddl){
+            Calendar calendar=Calendar.getInstance();
+            DatePickerDialog dialog = new DatePickerDialog(this,R.style.MyDatePickerDialogTheme,this,
+                    calendar.get(Calendar.YEAR),
+                    calendar.get(Calendar.MONTH),
+                    calendar.get(Calendar.DAY_OF_MONTH));
+            dialog.show();
+        }
+
+    }
+
+
+
 }
